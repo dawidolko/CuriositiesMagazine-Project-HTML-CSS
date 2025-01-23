@@ -1,10 +1,6 @@
-![project](img/description/photo1.png)
-
 # Internet Technology Project Work
 
 ## Responsive HTML/CSS Sample Internet Service
-
-### Instructor: Marcin Mrukowicz, MSc Eng
 
 ### Author: Dawid Olko | Student ID: 125148 | Major: Computer Science, lab group 3
 
