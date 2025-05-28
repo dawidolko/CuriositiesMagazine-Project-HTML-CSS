@@ -2,7 +2,7 @@
 
 ## Responsive HTML/CSS Sample Internet Service
 
-### Author: Dawid Olko | Student ID: 125148 | Major: Computer Science, lab group 3
+### Author: Dawid Olko | Student ID: 125148 | Major: Computer Science
 
 ### Rzeszów 2024
 
