@@ -4,8 +4,6 @@
 
 ### Author: Dawid Olko | Student ID: 125148 | Major: Computer Science
 
-### Rzeszów 2024
-
 ## Table of Contents
 
 1. [Title Page](#1-title-page)
@@ -123,12 +121,10 @@ Based on the analysis of provided HTML/CSS codes, such as home.html, faq.html, p
 ## Implementation:
 
 1. **Code Structure and Organization:**
-
    - The code will be organized around clearly defined components and sections.
    - Each HTML page and CSS file will have consistent and thoughtful class and ID naming, facilitating code navigation.
 
 2. **Responsiveness and Appearance:**
-
    - Each page element will be designed with flexibility in mind to adapt to different screen resolutions.
    - Styling will utilize modern CSS techniques, including CSS variables, for easy theme color or font changes.
 

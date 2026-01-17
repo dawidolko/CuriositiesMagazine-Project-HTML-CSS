@@ -1,13 +1,15 @@
- <br>![projekt](img/description/photo1.png)
+<br>![projekt](img/description/photo1.png)
+
 # Praca projektowa technologie internetowe
+
 ## Responsywna strona HTML/CSS Wzorcowy Serwis Internetowy
 
+### Prowadzący: mgr inż. Marcin Mrukowicz
 
-### Prowadzący:	mgr inż. Marcin Mrukowicz	
 ### Autor:Dawid Olko | nr albumu: 125148 |Kierunek: Informatyka, grupa lab 3
-### Rzeszów 2024
 
 ## Spis treści
+
 1. [Strona tytułowa](#1-strona-tytułowa)
 2. [Zdefiniowanie problemu do realizacji](#2-zdefiniowanie-problemu-do-realizacji)
 3. [Propozycja rozwiązania problemu](#3-propozycja-rozwiązania-problemu)
@@ -25,6 +27,7 @@ Tytuł projektu: Wzorcowy serwis internetowy – Responsywna strona HTML/CSS
 Projekt obejmuje zestaw stron internetowych składających się z różnorodnych sekcji, takich jak strona główna, galeria, produkty, usługi, kontakt, FAQ, i polityka prywatności, z których każda została zdefiniowana przy użyciu HTML i stylizowana za pomocą dedykowanych plików CSS. Strony są zaprojektowane z myślą o dostarczeniu użytkownikowi intuicyjnego i angażującego doświadczenia, umożliwiającego łatwe nawigowanie i dostęp do potrzebnych informacji.
 
 **Szczegóły dotyczące plików:**
+
 - `ourProducts.html`, `pay.html`, `productFirst.html`, `productSecond.html`, `productThird.html`: Strony te opisują oferowane produkty, umożliwiają zapoznanie się z ofertą oraz dokonywanie zakupów. Ich stylizacja została zdefiniowana w plikach CSS odpowiadających nazwami produktom.
 - `services.html`, `privacy.html`, `aboutUs.html`, `contact.html`, `faq.html`, `gallery.html`, `home.html`: Każda z tych stron pełni specyficzne zadanie, od przedstawienia usług, przez informowanie o polityce prywatności, aż po zapewnienie kontaktu z właścicielami serwisu. Strony te są zaprojektowane w taki sposób, aby użytkownik mógł łatwo znaleźć potrzebne informacje.
 - **Pliki CSS:** Dla każdej strony HTML przygotowano odpowiedni plik CSS, który odpowiada za wizualną prezentację treści. Każdy z tych plików zawiera selektory i reguły stylów specyficzne dla elementów strony, które regulują aspekty takie jak layout, kolory, czcionki, oraz responsywność.
@@ -33,7 +36,7 @@ Projekt obejmuje zestaw stron internetowych składających się z różnorodnych
 
 Dokumentacja została stworzona w celu zapewnienia szczegółowego przeglądu każdego z aspektów projektu, włącznie z jego strukturą, używanymi technologiami, oraz metodami implementacji. Ma ona na celu ułatwić zrozumienie projektu przez osoby trzecie, zapewnić wsparcie w dalszym rozwoju, oraz służyć jako dokumentacja techniczna dla użytkowników końcowych.
 
- <br>![projekt](img/description/photo2.png)
+<br>![projekt](img/description/photo2.png)
 
 <hr>
 
@@ -44,6 +47,7 @@ Projekt zakłada stworzenie szablonu strony internetowej, który będzie służy
 **Problem do realizacji:**
 
 Problemem jest stworzenie szablonu strony internetowej, który:
+
 1. **Uniwersalność i Adaptacyjność:**
    - Jest dostatecznie elastyczny, aby mógł być używany przez szerokie spektrum użytkowników, od blogerów po małe i średnie przedsiębiorstwa.
    - Może być łatwo dostosowany do specyficznych potrzeb i wymagań użytkownika, np. zmiana schematu kolorów, layoutu, czy dodawanie nowych funkcji.
@@ -60,6 +64,7 @@ Problemem jest stworzenie szablonu strony internetowej, który:
 **Zaproponowane rozwiązanie problemu:**
 
 W celu rozwiązania powyższych problemów, proponowane są następujące kroki:
+
 1. **Uniwersalność i Adaptacyjność:**
    - Zastosowanie modularnej architektury CSS i HTML, umożliwiającej łatwą zmianę komponentów i layoutów.
    - Przygotowanie zestawu predefiniowanych schematów kolorów i komponentów UI, które mogą być łatwo zmieniane lub rozszerzane.
@@ -78,6 +83,7 @@ W celu rozwiązania powyższych problemów, proponowane są następujące kroki:
 Celem projektu jest dostarczenie studentom i innym użytkownikom gotowego, łatwego do adaptacji szablonu strony internetowej, który może być wykorzystany do różnorodnych celów edukacyjnych, osobistych, lub biznesowych. Szablon ma stanowić solidną podstawę do dalszego rozwoju i personalizacji, zachęcając użytkowników do nauki i eksperymentowania z web designem i technologiami internetowymi.
 
 **Założenia projektowe:**
+
 - Szablon będzie rozwijany z myślą o najlepszych praktykach w projektowaniu i programowaniu stron internetowych.
 - Będzie dostępny i użyteczny dla osób o różnym stopniu zaawansowania, od początkujących po zaawansowanych użytkowników.
 - Zostanie zaprojektowany w taki sposób, aby ułatwić studentom zrozumienie podstawowych i zaawansowanych koncepcji związanych z tworzeniem stron internetowych.
@@ -143,33 +149,33 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 - Na górze strony pokazuje się pasek nawigacyjny, który podczas przewijania strony w dół jest cały czas widoczny, niezależnie od responsywności.
 - Jest on podzielony na dwie części, pierwsza część to „logo strony”, a druga to linki główne całej strony. Po kliknięciu w ikony nawigacyjne, jak i również logo zostajemy przekierowani na adresy podstron.
 
- <br>![projekt](img/description/photo3.png)
+<br>![projekt](img/description/photo3.png)
 
 ### Tło strony głównej (pierwszy widok):
 
 - Po załadowaniu strony widoczne jest tło, które jest zablurowane, a na nim logo z efektem, który ukazuje się po najechaniu na logo. Pod nim znajduje się słowo „klucz” strony i link do podstrony, w której są przedstawione nasze „oferty”.
 
- <br>![projekt](img/description/photo4.png)
+<br>![projekt](img/description/photo4.png)
 
 ### Sekcja pierwsza (galeria):
 
 - Jako pierwsza sekcja na stronie głównej znajduje się galeria z widocznymi trzema zdjęciami, a pod nimi jest przycisk, który po kliknięciu rozwija kolejne kilka zdjęć. Każde zdjęcie ma swoją animację, która jest pokazywana po najechaniu na nie myszką.
 
- <br>![projekt](img/description/photo5.png)
+<br>![projekt](img/description/photo5.png)
 
- <br>![projekt](img/description/photo6.png)
+<br>![projekt](img/description/photo6.png)
 
 ### Sekcja druga (widok detali i krótki opis):
 
 - Kolejna sekcja to opis z alertem/popup'em, który ujawnia się po kliknięciu. Są tam również box'y, w których znajdują się informacje i przyciski do przeniesienia na podstronę produktów.
 
- <br>![projekt](img/description/photo7.png)
+<br>![projekt](img/description/photo7.png)
 
 ### Sekcja trzecia (slider):
 
 - Sekcja slideru, została oparta na przedstawieniu produktów w ułożeniu poziomym. Po kliknięciu w daną opcję na sliderze, przenosi nas do danego produktu, gdzie mamy przedstawione zdjęcie, jak i również cenę.
 
- <br>![projekt](img/description/photo8.png)
+<br>![projekt](img/description/photo8.png)
 
 ### Sekcja czwarta (oferta produktów):
 
@@ -177,26 +183,26 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 
 - Przedstawione są również tam dwa przyciski, na pierwszym i ostatnim zdjęciu. Służą one do przenoszenia do podstrony produktów, gdzie dalej możemy obserwować produkty, którymi jesteśmy zainteresowani.
 
- <br>![projekt](img/description/photo9.png)
+<br>![projekt](img/description/photo9.png)
 
 ### Sekcja piąta (oferty podzielone na kategorie):
 
 - Przedstawiona sekcja, jest wykonana w łatwy i kompleksowy sposób. Ukazane są trzy produkty z nazwą, zdjęciem i przyciskiem do pokazania więcej produktów na podstronie.
 
- <br>![projekt](img/description/photo10.png)
+<br>![projekt](img/description/photo10.png)
 
 ### Sekcja szósta (kolekcje):
 
 - Ta część, to sekcja kolekcji. Ukazuje ona ofertę specjalną z opisem o % promocji oraz przyciskiem przenoszenia na podstronę ukazującą promocję.
 - Poniżej jest również 3 sposoby na szybką i tanią realizację zakupów, z możliwością zwrotu.
 
- <br>![projekt](img/description/photo11.png)
+<br>![projekt](img/description/photo11.png)
 
 ### Sekcja siódma (newsletter):
 
 - To sekcja ukazująca możliwość zasubskrybowania newslettera strony, który będzie wysyłał na podany maila, informację o nowościach i promocjach.
 
- <br>![projekt](img/description/photo12.png)
+<br>![projekt](img/description/photo12.png)
 
 ### Sekcja ósma (stopka):
 
@@ -204,7 +210,7 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 - Jest na niej również informacja, że jest w pełni poprawna semantycznie, ponieważ przeszła walidację.
 - Na stopce są social media strony takie jak Facebook, Instagram, YouTube, Twitter.
 
- <br>![projekt](img/description/photo13.png)
+<br>![projekt](img/description/photo13.png)
 
 ## 4.2. Podstrona „About Us”
 
@@ -212,68 +218,68 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 
 - Ukazana sekcja przedstawia przykładowy wzór strony, oraz relatywnie ułożone elementy wraz z małym „formularzem”.
 
- <br>![projekt](img/description/photo14.png)
+<br>![projekt](img/description/photo14.png)
 
 ### Sekcja „o nas”:
 
 - Krótki opis opisujący naszą firmę i zapraszający do przejrzenia produktów.
 
- <br>![projekt](img/description/photo15.png)
- 
+<br>![projekt](img/description/photo15.png)
+
 ### Galeria strony:
 
 - Mała i przejrzysta galeria, po której jeśli najedziemy na zdjęcie to ma ono swoją animację.
 
- <br>![projekt](img/description/photo16.png)
- 
+<br>![projekt](img/description/photo16.png)
+
 ## 4.3. Podstrona „Services”
 
 ### Jedna duża sekcja (ofert produktów):
 
 - Przedstawione są przykładowe produkty z ich opisem i nazwą oraz przyciskiem do przenoszenia na podstronę produktów.
 
- <br>![projekt](img/description/photo17.png)
- 
+<br>![projekt](img/description/photo17.png)
+
 ## 4.4. Podstrona „Products”
 
 ### Duża sekcja produktów z podziałem na produkty (KIDS/MEN/WOMEN):
 
 - Przyciski pozwalają na przełączenie między danymi strefami produktów. Możliwe jest wyświetlenie produktów tylko dla jednego grona osób, jak i dla wszystkich.
 
- <br>![projekt](img/description/photo18.png)
- 
+<br>![projekt](img/description/photo18.png)
+
 ## 4.5. Podstrona „Gallery”
 
 ### Relacyjne ułożenie elementów:
 
 - Sekcja składająca się z trzech kółek, gdzie to o najwyższym z-index’ie ma swój mały formularz przenoszący do podstrony produktów.
 
- <br>![projekt](img/description/photo19.png)
- 
+<br>![projekt](img/description/photo19.png)
+
 ### Galeria (zdjęcia):
 
 - Sekcja zdjęć ułożonych według rozdzielności, sekcja ta jest zrobiona na grid’zie, więc automatycznie niezależnie od urządzenia zdjęcia się układają.
 
- <br>![projekt](img/description/photo20.png)
- 
+<br>![projekt](img/description/photo20.png)
+
 ## 4.6. Podstrona „Contact”
 
 ### Sekcja formularza kontaktowego:
 
-- Ta podstrona zawiera tylko jedną sekcję, mianowicie formularz kontaktowego, gdzie jest uzupełniony ten formularz o walidację. 
+- Ta podstrona zawiera tylko jedną sekcję, mianowicie formularz kontaktowego, gdzie jest uzupełniony ten formularz o walidację.
 
 - Po poprawnym wprowadzeniu danych wyświetla się nam popup/alert i wiadomość zostaje wysłana.
 
- <br>![projekt](img/description/photo21.png)
- 
+<br>![projekt](img/description/photo21.png)
+
 ## 4.7. Podstrona „Faq”
 
 ### Sekcja najczęstszych pytań (pytania i odpowiedzi):
 
 - Sekcja ta za pomocą details po kliknięciu na zapytanie wyświetla odpowiedź.
 
- <br>![projekt](img/description/photo22.png)
- 
+<br>![projekt](img/description/photo22.png)
+
 ## 4.8. Podstrona „Cart”
 
 ### Sekcja pierwsza (produkty w koszyku):
@@ -281,14 +287,14 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 - Ta sekcja przedstawia produkty dodane do koszyka z nazwą ilością oraz ceną całkowitą.
 - Istnieje możliwość powrotu do podstrony produktów.
 
- <br>![projekt](img/description/photo23.png)
+<br>![projekt](img/description/photo23.png)
 
 ### Sekcja druga (formularz płatniczy):
 
 - Formularz ten zwraca komunikaty jeśli podamy złe dane. Po podaniu dobrych wyświetla się komunikat o udanych zakupach i przejrzeniu maila w sprawie dalszej wysyłki.
 
- <br>![projekt](img/description/photo24.png)
- 
+<br>![projekt](img/description/photo24.png)
+
 ## 4.9. Podstrony „Product First”, „Product Second”, „Product Third”
 
 ### Sekcja pierwsza (opis produktu i zdjęcia):
@@ -297,28 +303,27 @@ Rozwiązanie problemu tworzenia uniwersalnego szablonu strony internetowej na po
 
 - Zdjęcia produktu po których najechaniu mają swoją animację
 
- <br>![projekt](img/description/photo25.png)
- 
+<br>![projekt](img/description/photo25.png)
+
 ### Sekcja druga (dane wymiarowe produktu czas dostawy, koszyk):
 
 - Widoczny jest przycisk umożliwiający dodanie produktu do koszyka. Po kliknięciu produkt zostaje dodany do koszyka i przenosi nas do koszyka.
 
 - Tabela przedstawia przykładowe wartości o produkcie, takie jak opis, czas dostawy, wymiary czy kolor.
 
- <br>![projekt](img/description/photo26.png)
- 
+<br>![projekt](img/description/photo26.png)
+
 ## 4.10. Podstrona „Privacy Policy”:
 
 ### Sekcja opisu polityki prywatności:
 
 - Przedstawiony jest opis polityki prywatności po którego najechaniu test ma animację.
 
- <br>![projekt](img/description/photo27.png)
- 
+<br>![projekt](img/description/photo27.png)
+
 ## Testy strony w formacie „Desktop”:
 
-
- <br>![projekt](img/description/photo28.png)
+<br>![projekt](img/description/photo28.png)
 
 Strona główna wygląda w wersji desktopowej dobrze, nie ma nigdzie zagięć, wystających krawędzi. Pasek nawigacyjny wygląda przejrzyście, jest opisany i dodatkowo działa na wyobraźnię poprzez ikony.
 
@@ -386,25 +391,31 @@ Podsumowując można zauważyć, że strona w wersji mobilnej i desktopowej jest
 ## Testowanie wydajności:
 
 ### Czas Ładowania:
+
 - Wykorzystanie narzędzi takich jak Google PageSpeed Insights lub Lighthouse do analizy czasu ładowania strony i zidentyfikowania elementów, które mogą go spowalniać.
 
 ### Optymalizacja Zasobów:
+
 - Sprawdzenie, czy obrazy, skrypty i arkusze stylów są zoptymalizowane pod kątem szybkiego ładowania (np. kompresja, minifikacja).
 
 ## Testowanie kompatybilności przeglądarek:
 
 ### Przeglądarki Desktopowe:
+
 - Testowanie strony na najnowszych wersjach popularnych przeglądarek (Chrome, Firefox, Safari, Edge), aby upewnić się, że wygląd i funkcje działają jednolicie.
 
 ### Przeglądarki Mobilne:
+
 - Sprawdzenie działania strony na przeglądarkach mobilnych, szczególnie na systemach Android i iOS.
 
 ## Testowanie dostępności:
 
 ### Standardy Dostępności:
+
 - Wykorzystanie narzędzi takich jak WAVE lub AXE do sprawdzenia, czy strona jest dostępna dla użytkowników z ograniczeniami, np. dla osób korzystających z czytników ekranowych.
 
 ### Kontrast i Czytelność:
+
 - Ocena, czy kontrast tekstu na tle jest wystarczający dla osób z zaburzeniami widzenia, oraz czy fonty i ich rozmiary są czytelne.
 
 ## Podsumowanie:
@@ -446,6 +457,7 @@ Każdy z tych testów odgrywa kluczową rolę w zapewnieniu jakości i profesjon
 Kod jest komentowany w ten sposób, aby dostarczyć jasnych i czytelnych informacji na temat każdej sekcji kodu. Komentarze są używane, aby opisać, do czego służy każdy blok kodu oraz jakie są jego główne cele i funkcje. To pomaga programistom zrozumieć strukturę i działanie kodu oraz ułatwia utrzymanie i ewentualne modyfikacje w przyszłości.
 
 Komentarze są także używane do spełnienia wymogu tego punktu:
+
 - Komentarze są używane do opisania zmiennych korzeniowych, keyframes oraz stylów dla ciała strony, nagłówka i innych sekcji kodu.
 - Komentarze są napisane w jasny i zrozumiały sposób, co pomaga innym programistom szybko zrozumieć kod.
 - Komentarze zawierają informacje o tym, co dany fragment kodu robi, jakie są jego efekty wizualne oraz jakie są używane techniki (np. flexbox) w projekcie.
@@ -470,7 +482,7 @@ Całość dokumentacji dostępna również pod linkiem [tutaj](https://projekt1.
 
 # 6. Linki do źródeł
 
-Co do ikon użytych w nawigacji, zostały one pozyskane z serwisu [Flaticon](https://www.flaticon.com/). 
+Co do ikon użytych w nawigacji, zostały one pozyskane z serwisu [Flaticon](https://www.flaticon.com/).
 
 Treści graficzne i ikony z serwisu Flaticon są dostępne na licencji Creative Commons BY 3.0, co oznacza, że można je używać w projektach, pod warunkiem zachowania informacji o autorze (atrybucja). Dlatego też, autor projektu powinien uwzględnić odpowiednie atrybucje do tych ikon, informując o ich źródle i autorze.
 
@@ -483,8 +495,8 @@ Dodatkowo jest załączona na Github-Pages, więc możliwa jest indywidualna oce
 Historia commit'ów:
 
 <br>![projekt](img/description/photo50.png)
- 
- [Historia Commitów](https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS/commits/main) - Spis commit'ów
+
+[Historia Commitów](https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS/commits/main) - Spis commit'ów
 
 <hr>
 
@@ -527,4 +539,3 @@ Podsumowując, raport wskazuje, że chociaż strona internetowa działa dobrze w
 - **PWA:** 100/100 - Maksymalna ocena w tej kategorii oznacza, że strona spełnia kryteria aplikacji webowej postępującej, w tym aspekty takie jak szybkość, niezawodność i niezależność od połączenia sieciowego.
 
 Podsumowując, raport Lighthouse pokazuje, że strona w dużej mierze spełnia standardy wydajności i PWA, jednak są pewne obszary, szczególnie dostępność, które wymagają uwagi i potencjalnej poprawy.
-
