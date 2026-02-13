@@ -1,131 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl-PL">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorem ipsum - GALLERY</title>
-    <link rel="icon" type="img/png" href="img/icon.png">
-    <meta name="description" content="This is an example description and this is my website which is my project. This website is my property and was created to complete the course.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styleGallery.css">
-</head>
+    <link rel="icon" type="image/webp" href="img/icon.webp" />
+    <meta
+      name="description"
+      content="This is an example description and this is my website which is my project. This website is my property and was created to complete the course." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styleGallery.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="loading-top"></div>
-        <div class="loading-bottom"></div>
+      <div class="loading-top"></div>
+      <div class="loading-bottom"></div>
 
-        <div class="navbar">
-            <a href="./index.html" class="logo"><img src="img/logo1transparent.webp" alt="Logo" loading="lazy" width="80" height="80"></a>
-            <nav>
-                <label id="hamburger" for="toggle">☰</label><input type="checkbox" id="toggle">
+      <div class="navbar">
+        <a href="./index.html" class="logo"
+          ><img
+            src="img/logo1transparent.webp"
+            alt="Logo"
+            loading="lazy"
+            width="80"
+            height="80"
+        /></a>
+        <nav>
+          <label id="hamburger" for="toggle">☰</label
+          ><input type="checkbox" id="toggle" />
 
-                <ul class="navbar-links">
-                    <li>
-                        <a href="./index.html" class="nav__item"><ruby><img src="img/home-alt.svg" alt="home" loading="lazy" width="25" height="25">
-                                <rt>HOME</rt>
-                            </ruby></a>
-                    </li>
-                    <li>
-                        <a href="./aboutUs.html" class="nav__item"><ruby><img src="img/collage.svg" alt="collage" loading="lazy" width="25" height="25">
-                                <rt>ABOUT US</rt>
-                            </ruby></a>
-                    </li>
-                    <li>
-                        <a href="./services.html" class="nav__item"><ruby><img src="img/ereader.svg" alt="ereader" loading="lazy" width="25" height="25">
-                                <rt>SERVICES</rt>
-                            </ruby></a>
-                    </li>
-                    <li>
-                        <a href="./ourProducts.html" class="nav__item"><ruby><img src="img/calendar-next.svg" alt="calendar" loading="lazy" width="25" height="25">
-                                <rt>PRODUCTS</rt>
-                            </ruby></a>
-                    </li>
-                    <li>
-                        <a href="./gallery.html" class="nav__item"><ruby><img src="img/color-bucket.svg" alt="color-bucket" loading="lazy" width="25" height="25">
-                                <rt>GALLERY</rt>
-                            </ruby></a>
-                    </li>
-                    <li>
-                        <a href="./contact.html" class="nav__item"><ruby><img src="img/phone.svg" alt="phone" loading="lazy" width="25" height="25">
-                                <rt>CONTACT</rt>
-                            </ruby>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./faq.html" class="nav__item"><ruby><img src="img/comment.svg" alt="comment" loading="lazy" width="25" height="25">
-                                <rt>FAQ</rt>
-                            </ruby></a>
-                    </li>
-                </ul>
-                <ul style="margin-right: 10px;">
-                    <li>
-                        <a href="./pay.html"><ruby><img id="koszyk" src="img/shopping-cart.svg" alt="cart" loading="lazy" width="25" height="25">
-                                <rt>CART</rt>
-                            </ruby></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+          <ul class="navbar-links">
+            <li>
+              <a href="./index.html" class="nav__item"
+                ><ruby
+                  ><img
+                    src="img/home-alt.svg"
+                    alt="home"
+                    loading="lazy"
+                    width="25"
+                    height="25" />
+                  <rt>HOME</rt>
+                </ruby></a
+              >
+            </li>
+            <li>
+              <a href="./aboutUs.html" class="nav__item"
+                ><ruby
+                  ><img
+                    src="img/collage.svg"
+                    alt="collage"
+                    loading="lazy"
+                    width="25"
+                    height="25" />
+                  <rt>ABOUT US</rt>
+                </ruby></a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="nav__item"
+                ><ruby
+                  ><img
+                    src="img/ereader.svg"
+                    alt="ereader"
+                    loading="lazy"
+                    width="25"
+                    height="25" />
+                  <rt>SERVICES</rt>
+                </ruby></a
+              >
+            </li>
+            <li>
+              <a href="./ourProducts.html" class="nav__item"
+                ><ruby
+                  ><img
+                    src="img/calendar-next.svg"
+                    alt="calendar"
+                    loading="lazy"
+                    width="25"
+                    height="25" />
+                  <rt>PRODUCTS</rt>
+                </ruby></a
+              >
+            </li>
+            <li>
+              <a href="./gallery.html" class="nav__item"
+                ><ruby
+                  ><img
+                    src="img/color-bucket.svg"
+                    alt="color-bucket"
+                    loading="lazy"
+                    width="25"
+                    height="25" />
+                  <rt>GALLERY</rt>
+                </ruby></a
+              >
+            </li>
+            <li>
+              <a href="./contact.html" class="nav__item"
+                ><ruby
+                  ><img
+                    src="img/phone.svg"
+                    alt="phone"
+                    loading="lazy"
+                    width="25"
+                    height="25" />
+                  <rt>CONTACT</rt>
+                </ruby>
+              </a>
+            </li>
+            <li>
+              <a href="./faq.html" class="nav__item"
+                ><ruby
+                  ><img
+                    src="img/comment.svg"
+                    alt="comment"
+                    loading="lazy"
+                    width="25"
+                    height="25" />
+                  <rt>FAQ</rt>
+                </ruby></a
+              >
+            </li>
+          </ul>
+          <ul style="margin-right: 10px">
+            <li>
+              <a href="./pay.html"
+                ><ruby
+                  ><img
+                    id="koszyk"
+                    src="img/shopping-cart.svg"
+                    alt="cart"
+                    loading="lazy"
+                    width="25"
+                    height="25" />
+                  <rt>CART</rt>
+                </ruby></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <div id="relativeTemplate">
-            <div id="relativ"></div>
-            <img src="img/abootUs2.webp" alt="background2" id="background2">
-            <div id="relativ2">
-                <h3>See our products</h3>
-                <ul>
-                    <li>Product kids</li>
-                    <li>Product mens</li>
-                    <li>Product womens</li>
-                </ul>
-                <a href="./contact.html" class="contactClass">Lorem ipsum!</a>
-            </div>
+      <div id="relativeTemplate">
+        <div id="relativ"></div>
+        <img src="img/abootUs2.webp" alt="background2" id="background2" />
+        <div id="relativ2">
+          <h3>See our products</h3>
+          <ul>
+            <li>Product kids</li>
+            <li>Product mens</li>
+            <li>Product womens</li>
+          </ul>
+          <a href="./contact.html" class="contactClass">Lorem ipsum!</a>
         </div>
-        <h1 style="display:none;">.</h1>
-        <h2 class="gallery-heading">Gallery</h2>
-        <div class="gallery-container">
-            <section class="gallery_class" id="gallery">
-                <h2 style="display:none;">.</h2>
-                <img src="img/gallery1.webp" alt="Lorem Ipsum1" loading="lazy" width="400" height="400">
-                <img src="img/gallery2.webp" alt="Lorem Ipsum2" loading="lazy" width="400" height="400">
-                <img src="img/gallery3.webp" alt="Lorem Ipsum3" loading="lazy" width="400" height="400">
-                <img src="img/gallery4.webp" alt="Lorem Ipsum4" loading="lazy" width="400" height="400">
-                <img src="img/gallery5.webp" alt="Lorem Ipsum5" loading="lazy" width="400" height="400">
-                <img src="img/gallery6.webp" alt="Lorem Ipsum6" loading="lazy" width="400" height="400">
-                <img src="img/gallery7.webp" alt="Lorem Ipsum7" loading="lazy" width="400" height="400">
-                <img src="img/gallery8.webp" alt="Lorem Ipsum8" loading="lazy" width="400" height="400">
-                <img src="img/gallery9.webp" alt="Lorem Ipsum9" loading="lazy" width="400" height="400">
-                <img src="img/gallery10.webp" alt="Lorem Ipsum10" loading="lazy" width="400" height="400">
-                <img src="img/gallery11.webp" alt="Lorem Ipsum11" loading="lazy" width="400" height="400">
-                <img src="img/gallery12.webp" alt="Lorem Ipsum12" loading="lazy" width="400" height="400">
-            </section>
-        </div>
+      </div>
+      <h1 style="display: none">.</h1>
+      <h2 class="gallery-heading">Gallery</h2>
+      <div class="gallery-container">
+        <section class="gallery_class" id="gallery">
+          <h2 style="display: none">.</h2>
+          <img
+            src="img/gallery1.webp"
+            alt="Lorem Ipsum1"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery2.webp"
+            alt="Lorem Ipsum2"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery3.webp"
+            alt="Lorem Ipsum3"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery4.webp"
+            alt="Lorem Ipsum4"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery5.webp"
+            alt="Lorem Ipsum5"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery6.webp"
+            alt="Lorem Ipsum6"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery7.webp"
+            alt="Lorem Ipsum7"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery8.webp"
+            alt="Lorem Ipsum8"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery9.webp"
+            alt="Lorem Ipsum9"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery10.webp"
+            alt="Lorem Ipsum10"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery11.webp"
+            alt="Lorem Ipsum11"
+            loading="lazy"
+            width="400"
+            height="400" />
+          <img
+            src="img/gallery12.webp"
+            alt="Lorem Ipsum12"
+            loading="lazy"
+            width="400"
+            height="400" />
+        </section>
+      </div>
     </main>
 
     <footer>
-        <a href="https://www.facebook.com/" class="social__link"><img src="img/facebook.svg" alt="Facebook" width="30" height="30"></a>
-        <a href="https://www.instagram.com/" class="social__link"><img src="img/instagram.svg" alt="Instagram" width="30" height="30"></a>
-        <a href="https://www.youtube.com/" class="social__link"><img src="img/youtube.svg" alt="Youtube" width="30" height="30"></a>
-        <a href="https://www.twitter.com/" class="social__link"><img src="img/twitter.svg" alt="Twitter" width="30" height="30"></a>
-        <div class="footer">
-            <p class="footer__text">
-                All rights reserved &copy; 2023 Lorem ipsum |
-                <a href="./privacy.html" class="footer__link">Privacy Policy</a>
-            </p>
-        </div>
-        <p>
+      <a href="https://www.facebook.com/" class="social__link"
+        ><img src="img/facebook.svg" alt="Facebook" width="30" height="30"
+      /></a>
+      <a href="https://www.instagram.com/" class="social__link"
+        ><img src="img/instagram.svg" alt="Instagram" width="30" height="30"
+      /></a>
+      <a href="https://www.youtube.com/" class="social__link"
+        ><img src="img/youtube.svg" alt="Youtube" width="30" height="30"
+      /></a>
+      <a href="https://www.twitter.com/" class="social__link"
+        ><img src="img/twitter.svg" alt="Twitter" width="30" height="30"
+      /></a>
+      <div class="footer">
+        <p class="footer__text">
+          All rights reserved &copy; 2023 Lorem ipsum |
+          <a href="./privacy.html" class="footer__link">Privacy Policy</a>
+        </p>
+      </div>
+      <p>
         <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px"
-                src="https://jigsaw.w3.org/css-validator/images/vcss"
-                alt="Poprawny CSS!">
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Poprawny CSS!" />
         </a>
-    </p>
-          
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>

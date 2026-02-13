@@ -32,7 +32,7 @@ The project includes a set of web pages consisting of various sections such as h
 
 The documentation has been created to provide a detailed overview of every aspect of the project, including its structure, technologies used, and implementation methods. Its aim is to facilitate understanding of the project by third parties, provide support for further development, and serve as technical documentation for end-users.
 
-![project](img/description/photo2.png)
+![project](img/description/photo2.webp)
 
 <hr>
 
@@ -147,13 +147,13 @@ Solving the problem of creating a universal website template for a student proje
 - At the top of the page, there's a navigation bar that remains visible as you scroll down, regardless of responsiveness.
 - It is divided into two parts, the first part being the "site logo," and the second the main links of the entire site. Clicking on the navigation icons, as well as the logo, redirects us to the addresses of subpages.
 
-![project](img/description/photo3.png)
+![project](img/description/photo3.webp)
 
 ### Home Page Background (First View):
 
 - Upon loading the page, a blurred background is visible, with the logo appearing upon hovering over it. Below it is the site's "key" word and a link to the subpage where our "offers" are presented.
 
-![project](img/description/photo4.png)
+![project](img/description/photo4.webp)
 
 ### First Section (Gallery):
 
@@ -161,21 +161,21 @@ Solving the problem of creating a universal website template for a student proje
 
 photos, and below them, a button that, when clicked, expands to show several more photos. Each photo has its animation, which is displayed when hovered over with the mouse.
 
-![project](img/description/photo5.png)
+![project](img/description/photo5.webp)
 
-![project](img/description/photo6.png)
+![project](img/description/photo6.webp)
 
 ### Second Section (Detail View and Brief Description):
 
 - The next section is a description with an alert/popup that reveals itself upon clicking. There are also boxes containing information and buttons to redirect to the product subpage.
 
-![project](img/description/photo7.png)
+![project](img/description/photo7.webp)
 
 ### Third Section (Slider):
 
 - The slider section is based on presenting products in a horizontal arrangement. Clicking on an option in the slider redirects us to the specific product, where its photo and price are presented.
 
-![project](img/description/photo8.png)
+![project](img/description/photo8.webp)
 
 ### Fourth Section (Product Offer):
 
@@ -183,26 +183,26 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - Two buttons are also presented there, on the first and last photo. They serve to redirect to the product subpage, where we can further observe products of interest.
 
-![project](img/description/photo9.png)
+![project](img/description/photo9.webp)
 
 ### Fifth Section (Offers Divided into Categories):
 
 - The presented section is made in an easy and comprehensive way. It shows three products with their name, photo, and button to show more products on the subpage.
 
-![project](img/description/photo10.png)
+![project](img/description/photo10.webp)
 
 ### Sixth Section (Collections):
 
 - This part is the collections section. It presents a special offer with a description of % promotions and a button redirecting to the subpage showing the promotion.
 - Below are also 3 ways for quick and cheap realization of purchases, with the possibility of return.
 
-![project](img/description/photo11.png)
+![project](img/description/photo11.webp)
 
 ### Seventh Section (Newsletter):
 
 - This section shows the possibility of subscribing to the site's newsletter, which will send information about news and promotions to the given email.
 
-![project](img/description/photo12.png)
+![project](img/description/photo12.webp)
 
 ### Eighth Section (Footer):
 
@@ -210,7 +210,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 - It also contains information that it is fully semantically correct, as it has passed validation.
 - Social media of the site such as Facebook, Instagram, YouTube, Twitter are also on the footer.
 
-![project](img/description/photo13.png)
+![project](img/description/photo13.webp)
 
 ## 4.2. "About Us" Subpage
 
@@ -218,19 +218,19 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - The shown section presents an example pattern of the page, and relatively arranged elements along with a small "form".
 
-![project](img/description/photo14.png)
+![project](img/description/photo14.webp)
 
 ### "About Us" Section:
 
 - A brief description introducing our company and inviting to browse through the products.
 
-![project](img/description/photo15.png)
+![project](img/description/photo15.webp)
 
 ### Site Gallery:
 
 - A small and clear gallery, after hovering over a photo, it has its animation.
 
-![project](img/description/photo16.png)
+![project](img/description/photo16.webp)
 
 ## 4.3. "Services" Subpage
 
@@ -238,7 +238,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - Example products are presented with their description and name, and a button to redirect to the product subpage.
 
-![project](img/description/photo17.png)
+![project](img/description/photo17.webp)
 
 ## 4.4. "Products" Subpage
 
@@ -246,7 +246,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - Buttons allow switching between the given product zones. It is possible to display products only for one group of people, as well as for everyone.
 
-![project](img/description/photo18.png)
+![project](img/description/photo18.webp)
 
 ## 4.5. "Gallery" Subpage
 
@@ -254,13 +254,13 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - The section consists of three circles, where the one with the highest z-index has its small form redirecting to the product subpage.
 
-![project](img/description/photo19.png)
+![project](img/description/photo19.webp)
 
 ### Gallery (Photos):
 
 - The section of photos arranged according to resolution, this section is made on a grid, so automatically, regardless of the device, the photos are arranged.
 
-![project](img/description/photo20.png)
+![project](img/description/photo20.webp)
 
 ## 4.6. "Contact" Subpage
 
@@ -270,7 +270,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - After entering the data correctly, a popup/alert is displayed, and the message is sent.
 
-![project](img/description/photo21.png)
+![project](img/description/photo21.webp)
 
 ## 4.7. "Faq" Subpage
 
@@ -278,7 +278,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - This section, by clicking on the query using details, displays the answer.
 
-![project](img/description/photo22.png)
+![project](img/description/photo22.webp)
 
 ## 4.8. "Cart" Subpage
 
@@ -287,7 +287,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 - This section presents products added to the cart with their name, quantity, and total price.
 - There is an option to return to the product subpage.
 
-![project](img/description/photo23.png)
+![project](img/description/photo23.webp)
 
 ### Second Section
 
@@ -295,7 +295,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - This form returns messages if we enter incorrect data. After providing the correct data, a message about successful purchases and checking the email regarding further shipment is displayed.
 
-![project](img/description/photo24.png)
+![project](img/description/photo24.webp)
 
 ## 4.9. "Product First", "Product Second", "Product Third" Subpages
 
@@ -305,7 +305,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - Product photos that have their animation upon hovering
 
-![project](img/description/photo25.png)
+![project](img/description/photo25.webp)
 
 ### Second Section (Product Dimensional Data, Delivery Time, Cart):
 
@@ -313,7 +313,7 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - The table shows example values about the product, such as description, delivery time, dimensions, or color.
 
-![project](img/description/photo26.png)
+![project](img/description/photo26.webp)
 
 ## 4.10. "Privacy Policy" Subpage
 
@@ -321,70 +321,70 @@ photos, and below them, a button that, when clicked, expands to show several mor
 
 - The privacy policy description is presented, which has animation upon hovering.
 
-![project](img/description/photo27.png)
+![project](img/description/photo27.webp)
 
 ## Desktop Format Page Tests:
 
-![project](img/description/photo28.png)
+![project](img/description/photo28.webp)
 
 The homepage looks good in the desktop version, with no bends or protruding edges. The navigation bar looks clear, is described, and additionally acts on the imagination through icons.
 
-![project](img/description/photo29.png)
+![project](img/description/photo29.webp)
 
 The gallery and detail section in the desktop version are relatively clear, with equal spacing from the edges and equal spacing between photos. Everything looks legible and does not cause problems with reading.
 
-![project](img/description/photo30.png)
+![project](img/description/photo30.webp)
 
 The slider and product sections have equal indentations and good placement, are fully legible, and meet the requirements regarding assumptions.
 
-![project](img/description/photo31.png)
-![project](img/description/photo32.png)
+![project](img/description/photo31.webp)
+![project](img/description/photo32.webp)
 
 Elements are adjusted in such a way that they do not dazzle the eye and encourage clicking on a given product. Certainly, their number does not overwhelm and acts naturally on the imagination.
 
-![project](img/description/photo33.png)
-![project](img/description/photo34.png)
+![project](img/description/photo33.webp)
+![project](img/description/photo34.webp)
 
 The page ends on the footer section, which in a minimalist way does not spoil the overall execution of the page and fully adapts to the chosen devices.
 
-![project](img/description/photo35.png)
+![project](img/description/photo35.webp)
 
 Subpages also have correct layout and are legible to the eye, realizing the vision of a comprehensive company.
 
-![project](img/description/photo36.png)
+![project](img/description/photo36.webp)
 
 Contact and payment forms are centrally placed in the middle of the screen, which is certainly pleasant for the eye and suitable for the user.
 
-![project](img/description/photo37.png)
-![project](img/description/photo38.png)
+![project](img/description/photo37.webp)
+![project](img/description/photo38.webp)
 
 Products and their descriptions are matched to each other, showing that they fit together and do not spoil the vision of connecting the whole.
 
 ## Mobile Format Page Tests:
 
-![project](img/description/photo39.png)
+![project](img/description/photo39.webp)
 
 The navigation bar looks good, the cart icon is separately highlighted to stand out from the entire set of tabs. The logo is constantly placed in the corner of the screen to be embedded in memory. It stands out and does not overlap with other elements.
 
-![project](img/description/photo40.png)
+![project](img/description/photo40.webp)
 
-![project](img/description/photo41.png)
+![project](img/description/photo41.webp)
 
 As you can see, the photos have changed their position and are still at equal distances from each other, fulfilling the vision of a responsive page.
 
-![project](img/description/photo42.png)
+![project](img/description/photo42.webp)
 
 The slider is now ready for scrolling slide by slide, through which one can still view the products presented in it in a legible way.
 
-![project](img/description/photo43.png)
+![project](img/description/photo43.webp)
 
 Promotions, newsletters, and the footer bar have also arranged themselves in a legible and responsive way. This shows that the page is fully responsive and well-adapted.
 
-![project](img/description/photo44.png)
+![project](img/description/photo44.webp)
 
 Subpages, as you can see, are also fully responsive and meet the project's assumptions. The distances are equal, making the page good for the eye and attracting customers. The navigation bar does not cover too much field and fulfills the touch area requirement (40px x 40px).
 
-![project](img/description/photo45.png)
+![project](img/description/photo45.webp)
 
 Contact and payment forms are perfectly adapted to mobile devices, are legible, and meet the conditions of a responsive page.
 
@@ -436,19 +436,19 @@ The page has undergone rigorous functionality, responsiveness, performance, brow
 
 - SEO: A perfect score of 100/100 indicates that the page was built in accordance with SEO principles, contributing to its visibility in search engine results.
 
-![project](img/description/photo46.png)
+![project](img/description/photo46.webp)
 
 ### CSS Validation by W3C Validator:
 
 - CSS validation was successful - no errors were found. This is an indication that the CSS style sheet was written cleanly and in accordance with current standards, ensuring cross-browser compatibility and making further maintenance and development of the code easier.
 
-![project](img/description/photo47.png)
+![project](img/description/photo47.webp)
 
 ### HTML Validation by Nu Html Checker:
 
 - Similarly, the page's HTML also passed validation without errors. This indicates high code quality, compliance with standards, and likely good interpretation by various browsers and devices.
 
-![project](img/description/photo48.png)
+![project](img/description/photo48.webp)
 
 Each of these tests plays a key role in ensuring the quality and professionalism of web design. Good results in performance and SEO tests are particularly important for end-users and for the page's positioning in search engines. Meanwhile, CSS and HTML validation results are important from a developer's perspective, as they confirm that the code is well-written and will be easier to maintain and develop further. Accessibility is crucial to ensure that all users, regardless of their capabilities, can use the page. The achieved results indicate that the template is already at a high level, but they also point to areas that could be further improved in the future.
 
@@ -478,7 +478,7 @@ Thanks to this approach, the source code of the project is not only well-organiz
 
 Example images showing the KSS documentation (Knyle Style Sheets):
 
-![project](img/description/photo49.png)
+![project](img/description/photo49.webp)
 
 The entire documentation is also available at the link [here](https://projekt1.dawidolko.pl/kss/styleguide/).
 
@@ -498,7 +498,7 @@ Additionally, it is attached to Github-Pages, so individual assessment of the pa
 
 Commit history:
 
-![project](img/description/photo50.png)
+![project](img/description/photo50.webp)
 
 [Commit History](https://github.com/dawidolko/Responsive-Website-Design-HTML-CSS/commits/main) - List of commits
 
@@ -508,7 +508,7 @@ Commit history:
 
 ## a) [https://www.seobility.net/en/seocheck/](https://www.seobility.net/en/seocheck/)
 
-![project](img/description/photo51.png)
+![project](img/description/photo51.webp)
 
 ### Detailed Report:
 
@@ -532,7 +532,7 @@ Summarizing, the report indicates that while the webpage performs well in certai
 
 ## b) [https://developer.chrome.com/docs/lighthouse/](https://developer.chrome.com/docs/lighthouse/)
 
-![project](img/description/photo52.png)
+![project](img/description/photo52.webp)
 
 ### Lighthouse Report Results:
 
