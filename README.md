@@ -1,4 +1,4 @@
-# Internet Technology Project Work
+# Internet Technology Project Work 
 
 ## Responsive HTML/CSS Sample Internet Service
 
@@ -546,3 +546,4 @@ with disabilities, for example, there might be issues with contrast, form labels
 - **PWA:** 100/100 - A perfect score in this category means that the page meets the criteria for a progressive web app, including aspects such as speed, reliability, and independence from network connection.
 
 In summary, the Lighthouse report shows that the page largely meets performance and PWA standards, however, there are certain areas, especially accessibility, that require attention and potential improvement.
+
