@@ -11,7 +11,10 @@
     <!-- Ustawienie kodowania znaków dla dokumentu -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta tag dla odpowiedniego skalowania strony na różnych urządzeniach -->
-    <link rel="icon" type="image/webp" href="img/icon.webp" />
+    <!-- SVG first: transparent, so it sits correctly on a dark tab strip.
+         The WebP stays as a fallback for browsers that skip SVG icons. -->
+    <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+    <link rel="alternate icon" type="image/webp" href="img/icon.webp" />
     <!-- Link do ikony strony (favicon) -->
     <meta name="description" content="This is an example description..." />
     <!-- Opis strony, ważny dla SEO -->
@@ -27,9 +30,37 @@
     <!-- Link do zewnętrznego arkusza stylów fontów Google -->
     <link rel="stylesheet" href="css/styleIndex.css" />
     <!-- Link do głównego arkusza stylów -->
+  
+    <!-- Canonical URL: the authoritative address for this page. -->
+    <link rel="canonical" href="https://projekt1.dawidolko.pl/" />
+
+    <!-- Open Graph / Twitter: controls how the page renders when shared. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://projekt1.dawidolko.pl/" />
+    <meta property="og:title" content="CuriositiesMagazine" />
+    <meta property="og:description" content="Magazine-style responsive website built with semantic HTML and CSS." />
+    <meta property="og:site_name" content="CuriositiesMagazine" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CuriositiesMagazine" />
+    <meta name="twitter:description" content="Magazine-style responsive website built with semantic HTML and CSS." />
+
+    <!-- Structured data: lets search engines describe the site in results. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CuriositiesMagazine",
+        "url": "https://projekt1.dawidolko.pl",
+        "description": "Magazine-style responsive website built with semantic HTML and CSS.",
+        "author": { "@type": "Person", "name": "Dawid Olko", "url": "https://dawidolko.pl" }
+      }
+    </script>
   </head>
 
   <body>
+    <!-- First focusable element: lets a keyboard user skip the navigation. -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
       <!-- Sekcja nagłówkowa strony -->
       <div class="loading-top"></div>
@@ -41,6 +72,7 @@
           <!-- Kontener paska nawigacyjnego -->
           <!-- Logo strony -->
           <a href="./index.html" class="logo"
+            aria-label="CuriositiesMagazine home"
             ><img
               src="img/logo1transparent.webp"
               alt="Logo"
@@ -174,7 +206,7 @@
         <!-- Reszta sekcji zawiera elementy tekstu, obrazy oraz linki -->
         <div id="container">
           <div class="circle">
-            <a href="./index.html">
+            <a href="./index.html" aria-label="CuriositiesMagazine — strona główna">
               <div class="logoTrans"></div>
             </a>
           </div>
@@ -190,7 +222,8 @@
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
+      <h1 class="visually-hidden">CuriositiesMagazine — magazyn o ciekawostkach</h1>
       <!-- Główna sekcja strony -->
       <section class="photoFirst">
         <!-- Sekcja pierwszego zestawu zdjęć -->
@@ -1002,9 +1035,11 @@
             <input
               type="email"
               class="newsletter-input"
+              aria-label="Newsletter email address"
+              autocomplete="email"
               placeholder="Enter your email address"
               required />
-            <button type="submit" class="newsletter-submit-btn">
+            <button type="submit" class="newsletter-submit-btn" aria-label="Zapisz się do newslettera">
               <img
                 src="img/phone.svg"
                 alt="Send"
@@ -1019,7 +1054,7 @@
     <footer>
       <div id="socialmedia">
         <!-- Linki do mediów społecznościowych -->
-        <a href="https://www.facebook.com/" class="social__link"
+        <a href="https://www.facebook.com/" class="social__link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"
           ><img
             src="img/facebook.svg"
             alt="Facebook"
@@ -1027,7 +1062,7 @@
             width="30"
             height="30"
         /></a>
-        <a href="https://www.instagram.com/" class="social__link"
+        <a href="https://www.instagram.com/" class="social__link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
           ><img
             src="img/instagram.svg"
             alt="Instagram"
@@ -1035,7 +1070,7 @@
             width="30"
             height="30"
         /></a>
-        <a href="https://www.youtube.com/" class="social__link"
+        <a href="https://www.youtube.com/" class="social__link" aria-label="Youtube" target="_blank" rel="noopener noreferrer"
           ><img
             src="img/youtube.svg"
             alt="Youtube"
@@ -1043,7 +1078,7 @@
             width="30"
             height="30"
         /></a>
-        <a href="https://www.twitter.com/" class="social__link"
+        <a href="https://www.twitter.com/" class="social__link" aria-label="Twitter" target="_blank" rel="noopener noreferrer"
           ><img
             src="img/twitter.svg"
             alt="Twitter"
@@ -1067,7 +1102,7 @@
       <div>
         <!-- Dodatkowe informacje lub linki -->
         <p>
-          <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <a href="https://jigsaw.w3.org/css-validator/check/referer" aria-label="Validate the CSS of this page with the W3C validator">
             <img
               style="border: 0; width: 88px; height: 31px"
               src="https://jigsaw.w3.org/css-validator/images/vcss"

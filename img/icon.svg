@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CuriositiesMagazine">
+  <!--
+    Replaces a 32×32 WebP with no alpha channel, which painted a white tile in
+    dark browser tab bars. A transparent SVG adapts to whatever the browser
+    draws behind it and stays sharp at any density.
+  -->
+  <defs>
+    <linearGradient id="cmSpine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8573f"/>
+      <stop offset="100%" style="stop-color:#c8402b"/>
+    </linearGradient>
+    <linearGradient id="cmPage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d8ecf"/>
+      <stop offset="100%" style="stop-color:#2a6fa8"/>
+    </linearGradient>
+  </defs>
+  <!-- Open magazine: two facing pages -->
+  <path d="M32 16c-6-4-13-5-20-4v34c7-1 14 0 20 4z" fill="url(#cmSpine)"/>
+  <path d="M32 16c6-4 13-5 20-4v34c-7-1-14 0-20 4z" fill="url(#cmPage)"/>
+  <!-- Text lines -->
+  <g fill="#ffffff" opacity="0.85">
+    <rect x="17" y="22" width="11" height="3" rx="1.5"/>
+    <rect x="17" y="29" width="8" height="3" rx="1.5"/>
+    <rect x="36" y="22" width="11" height="3" rx="1.5"/>
+    <rect x="36" y="29" width="8" height="3" rx="1.5"/>
+  </g>
+</svg>
