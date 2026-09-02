@@ -3,21 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lorem ipsum - FAQ</title>
-    <link rel="icon" type="image/webp" sizes="32x32" href="img/icon.webp" />
-    <meta
-      name="description"
-      content="This is an example description and this is my website which is my project. This website is my property and was created to complete the course." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap"
-      rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+    <link rel="alternate icon" type="image/webp" href="img/icon.webp" />
+    <title>Najczęstsze pytania — CuriositiesMagazine</title>
+    <meta name="description" content="Odpowiedzi na najczęstsze pytania o CuriositiesMagazine: prenumerata, źródła, sprostowania i przedruki." />
     <link rel="preload" href="css/styleFaq.css" as="style" />
     <link rel="stylesheet" href="css/styleFaq.css" />
+    <!-- Shared design system: tokens, components, dark mode, print. -->
+    <link rel="stylesheet" href="css/theme.css" />
+  
+    <!-- Canonical URL: the authoritative address for this page. -->
+    <link rel="canonical" href="https://projekt1.dawidolko.pl/faq.html" />
+
+    <!-- Open Graph / Twitter Card: how the page renders when shared. -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://projekt1.dawidolko.pl/faq.html" />
+    <meta property="og:title" content="Najczęstsze pytania — CuriositiesMagazine" />
+    <meta property="og:description" content="Odpowiedzi na najczęstsze pytania o CuriositiesMagazine: prenumerata, źródła, sprostowania i przedruki." />
+    <meta property="og:site_name" content="CuriositiesMagazine" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:image" content="https://projekt1.dawidolko.pl/img/logo1.webp" />
+    <meta property="og:image:alt" content="Winieta magazynu CuriositiesMagazine" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Najczęstsze pytania — CuriositiesMagazine" />
+    <meta name="twitter:description" content="Odpowiedzi na najczęstsze pytania o CuriositiesMagazine: prenumerata, źródła, sprostowania i przedruki." />
+    <meta name="twitter:image" content="https://projekt1.dawidolko.pl/img/logo1.webp" />
+    <meta name="author" content="Redakcja CuriositiesMagazine" />
+    <meta name="theme-color" content="#16232b" />
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://projekt1.dawidolko.pl/" },
+          { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://projekt1.dawidolko.pl/faq.html" }
+        ]
+      }
+    </script>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czym różnią się warianty prenumeraty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wariant cyfrowy to dwanaście wydań w formatach PDF i EPUB, dostępnych w dniu premiery. Wariant drukowany obejmuje te same wydania wysyłane pocztą. Wariant łączony daje jedno i drugie."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy mogę zamówić prenumeratę na inny adres niż domowy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Adres wysyłki podaje się osobno przy składaniu zamówienia i nie musi on być zgodny z adresem płatnika."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kiedy ukazuje się nowe wydanie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nowy numer publikujemy w pierwszy wtorek miesiąca. Prenumeratorzy cyfrowi dostają go tego samego dnia rano, egzemplarze drukowane wysyłamy w ciągu trzech dni roboczych."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy mogę zrezygnować z prenumeraty w trakcie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Rezygnację można zgłosić w dowolnym momencie, a za niewykorzystane wydania zwracamy proporcjonalną część opłaty."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy wystawiacie fakturę VAT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Fakturę wysyłamy e-mailem po zaksięgowaniu płatności. Dane do faktury można podać przy zamówieniu lub uzupełnić później, pisząc do redakcji."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Skąd bierzecie tematy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tematy wybieramy na kolegium raz w miesiącu, częściowo z propozycji czytelników. Do wydania trafia tylko materiał, który da się oprzeć na recenzowanej publikacji albo źródle archiwalnym."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy podajecie źródła do artykułów?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Każdy tekst kończy się listą źródeł. W wersji cyfrowej pozycje są odnośnikami, w druku podajemy pełne opisy bibliograficzne."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Co robicie, gdy naukowcy się nie zgadzają?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Piszemy o tym wprost. Zaznaczamy, które twierdzenie jest dobrze udokumentowane, a które opiera się na pojedynczych badaniach i wymaga powtórzeń."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Znalazłem błąd w artykule. Co dalej?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Prosimy o wiadomość przez formularz kontaktowy z podaniem tytułu tekstu. Sprostowania publikujemy w kolejnym wydaniu i oznaczamy je w wersji cyfrowej."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy publikujecie teksty sponsorowane?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Nie przyjmujemy materiałów sponsorowanych ani lokowania produktu. Magazyn utrzymuje się wyłącznie z prenumeraty."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy mogę zaproponować własny tekst?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Prosimy o krótki konspekt, listę planowanych źródeł i próbkę wcześniejszych tekstów. Odpowiadamy na wszystkie zgłoszenia w ciągu dwóch tygodni."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy mogę przedrukować wasz artykuł?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Przedruk w celach niekomercyjnych, na przykład w gazetce szkolnej, jest możliwy po uzyskaniu zgody i z podaniem autora oraz numeru wydania. Wystarczy napisać do redakcji."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy przyjmujecie zdjęcia od czytelników?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak, do działu galerii. Prosimy o pliki w rozdzielczości co najmniej 2000 pikseli na dłuższym boku wraz z informacją, gdzie i kiedy powstało zdjęcie."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak zmienić dane kontaktowe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wystarczy wiadomość przez formularz kontaktowy. Zmianę adresu wysyłki prosimy zgłaszać najpóźniej na tydzień przed premierą kolejnego numeru."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy prowadzicie newsletter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Raz w miesiącu wysyłamy zapowiedź nowego wydania. Nie zawiera reklam, a wypisać się można odnośnikiem w każdej wiadomości."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
+    <!-- First focusable element: lets a keyboard user skip the navigation. -->
+    <a class="skip-link" href="#main-content">Przejdź do treści</a>
     <header>
       <div class="loading-top"></div>
       <div class="loading-bottom"></div>
@@ -26,301 +181,305 @@
         <a href="./index.html" class="logo"
           ><img
             src="img/logo1transparent.webp"
-            alt="Logo"
+            alt="CuriositiesMagazine"
             loading="lazy"
             width="80"
             height="80"
         /></a>
-        <nav>
+        <nav aria-label="Główne">
           <label id="hamburger" for="toggle">☰</label
           ><input type="checkbox" id="toggle" />
 
           <ul class="navbar-links">
-            <li>
-              <a href="./index.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/home-alt.svg"
-                    alt="home"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>HOME</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./aboutUs.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/collage.svg"
-                    alt="collage"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>ABOUT US</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./services.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/ereader.svg"
-                    alt="ereader"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>SERVICES</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./ourProducts.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/calendar-next.svg"
-                    alt="calendar"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>PRODUCTS</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./gallery.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/color-bucket.svg"
-                    alt="color-bucket"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>GALLERY</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./contact.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/phone.svg"
-                    alt="phone"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>CONTACT</rt>
-                </ruby>
-              </a>
-            </li>
-            <li>
-              <a href="./faq.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/comment.svg"
-                    alt="comment"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>FAQ</rt>
-                </ruby></a
-              >
-            </li>
-          </ul>
-          <ul style="margin-right: 10px">
-            <li>
-              <a href="./pay.html"
-                ><ruby
-                  ><img
-                    id="koszyk"
-                    src="img/shopping-cart.svg"
-                    alt="cart"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>CART</rt>
-                </ruby></a
-              >
-            </li>
-          </ul>
+              <li>
+                <a href="./index.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/home-alt.svg" alt="" width="25" height="25" />
+                    <rt>Start</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./aboutUs.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/collage.svg" alt="" width="25" height="25" />
+                    <rt>O redakcji</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./services.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/ereader.svg" alt="" width="25" height="25" />
+                    <rt>Działy</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./ourProducts.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/calendar-next.svg" alt="" width="25" height="25" />
+                    <rt>Artykuły</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./gallery.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/color-bucket.svg" alt="" width="25" height="25" />
+                    <rt>Galeria</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./contact.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/phone.svg" alt="" width="25" height="25" />
+                    <rt>Kontakt</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./faq.html" class="nav__item" aria-current="page"
+                  ><ruby
+                    ><img src="img/comment.svg" alt="" width="25" height="25" />
+                    <rt>FAQ</rt>
+                  </ruby></a
+                >
+              </li>
+            </ul>
+          <ul class="navbar-utility">
+              <li>
+                <a href="./pay.html" class="nav__item"
+                  ><ruby
+                    ><img id="koszyk" src="img/shopping-cart.svg" alt="" width="25" height="25" />
+                    <rt>Prenumerata</rt>
+                  </ruby></a
+                >
+              </li>
+            </ul>
         </nav>
       </div>
     </header>
-    <main id="faq-section">
-      <h1>Frequently Asked Questions</h1>
+    <main id="main-content" tabindex="-1" class="faq-section">
+      <nav class="breadcrumbs" aria-label="Okruszki">
+        <ol>
+          <li><a href="./index.html">Strona główna</a></li>
+          <li><span aria-current="page">FAQ</span></li>
+        </ol>
+      </nav>
+      <h1>Najczęstsze pytania</h1>
+      <p class="page-intro__lede">Prenumerata, źródła, sprostowania i przedruki — zebrane odpowiedzi. Jeśli czegoś tu brakuje, napisz do nas.</p>
       <section class="faq-category">
-        <h2>General Questions</h2>
+        <h2>Prenumerata i dostęp</h2>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Can I order a product to an address different from my home?
+            Czym różnią się warianty prenumeraty?
           </summary>
           <p class="faq-answer">
-            Yes, you can specify an alternative delivery address during the
-            checkout process.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            Does your offer include a warranty?
-          </summary>
-          <p class="faq-answer">
-            Yes, all our products come with a standard manufacturer's warranty.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">Is free shipping available?</summary>
-          <p class="faq-answer">
-            Free shipping is available for orders above a certain value.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">How can I track my order?</summary>
-          <p class="faq-answer">
-            After your order has been shipped, you will receive a tracking
-            number that allows you to track your package online.
+            Wariant cyfrowy to dwanaście wydań w formatach PDF i EPUB, dostępnych w dniu premiery. Wariant drukowany obejmuje te same wydania wysyłane pocztą. Wariant łączony daje jedno i drugie.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Can I change my order after placing it?
+            Czy mogę zamówić prenumeratę na inny adres niż domowy?
           </summary>
           <p class="faq-answer">
-            Order changes are possible only for a short time after the order is
-            placed.
+            Tak. Adres wysyłki podaje się osobno przy składaniu zamówienia i nie musi on być zgodny z adresem płatnika.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            What payment methods do you accept?
+            Kiedy ukazuje się nowe wydanie?
           </summary>
           <p class="faq-answer">
-            We accept credit cards, bank transfers, and electronic payments.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">Can I receive a VAT invoice?</summary>
-          <p class="faq-answer">
-            Yes, a VAT invoice will be sent by email or included with your
-            package upon request.
+            Nowy numer publikujemy w pierwszy wtorek miesiąca. Prenumeratorzy cyfrowi dostają go tego samego dnia rano, egzemplarze drukowane wysyłamy w ciągu trzech dni roboczych.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Do you offer technical support?
+            Czy mogę zrezygnować z prenumeraty w trakcie?
           </summary>
           <p class="faq-answer">
-            We offer technical support for all of our products.
+            Tak. Rezygnację można zgłosić w dowolnym momencie, a za niewykorzystane wydania zwracamy proporcjonalną część opłaty.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Can I place an order over the phone?
+            Czy wystawiacie fakturę VAT?
           </summary>
           <p class="faq-answer">
-            Yes, our team is available to take phone orders during business
-            hours.
+            Tak. Fakturę wysyłamy e-mailem po zaksięgowaniu płatności. Dane do faktury można podać przy zamówieniu lub uzupełnić później, pisząc do redakcji.
+          </p>
+        </details>
+      </section>
+
+      <section class="faq-category">
+        <h2>Treść i źródła</h2>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            Skąd bierzecie tematy?
+          </summary>
+          <p class="faq-answer">
+            Tematy wybieramy na kolegium raz w miesiącu, częściowo z propozycji czytelników. Do wydania trafia tylko materiał, który da się oprzeć na recenzowanej publikacji albo źródle archiwalnym.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Are products available in different colors?
+            Czy podajecie źródła do artykułów?
           </summary>
           <p class="faq-answer">
-            Yes, most products are available in multiple colors, which you can
-            select before adding to the cart.
+            Tak. Każdy tekst kończy się listą źródeł. W wersji cyfrowej pozycje są odnośnikami, w druku podajemy pełne opisy bibliograficzne.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Can I return a product if I don't like it?
+            Co robicie, gdy naukowcy się nie zgadzają?
           </summary>
           <p class="faq-answer">
-            Yes, we accept returns within a specified period provided the
-            product has not been used.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">Can I cancel my order?</summary>
-          <p class="faq-answer">
-            Yes, orders can be canceled if they have not yet been shipped.
+            Piszemy o tym wprost. Zaznaczamy, które twierdzenie jest dobrze udokumentowane, a które opiera się na pojedynczych badaniach i wymaga powtórzeń.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            How can I update my contact details?
+            Znalazłem błąd w artykule. Co dalej?
           </summary>
           <p class="faq-answer">
-            You can update your contact information in the 'My Account' section
-            on our website.
+            Prosimy o wiadomość przez formularz kontaktowy z podaniem tytułu tekstu. Sprostowania publikujemy w kolejnym wydaniu i oznaczamy je w wersji cyfrowej.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Do you offer discounts for regular customers?
+            Czy publikujecie teksty sponsorowane?
           </summary>
           <p class="faq-answer">
-            Yes, we have a loyalty program for our returning customers.
+            Nie. Nie przyjmujemy materiałów sponsorowanych ani lokowania produktu. Magazyn utrzymuje się wyłącznie z prenumeraty.
+          </p>
+        </details>
+      </section>
+
+      <section class="faq-category">
+        <h2>Współpraca i przedruki</h2>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            Czy mogę zaproponować własny tekst?
+          </summary>
+          <p class="faq-answer">
+            Tak. Prosimy o krótki konspekt, listę planowanych źródeł i próbkę wcześniejszych tekstów. Odpowiadamy na wszystkie zgłoszenia w ciągu dwóch tygodni.
           </p>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            Where can I find product reviews?
+            Czy mogę przedrukować wasz artykuł?
           </summary>
           <p class="faq-answer">
-            Customer reviews of the product can be found on the product page
-            under the description.
+            Przedruk w celach niekomercyjnych, na przykład w gazetce szkolnej, jest możliwy po uzyskaniu zgody i z podaniem autora oraz numeru wydania. Wystarczy napisać do redakcji.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            Czy przyjmujecie zdjęcia od czytelników?
+          </summary>
+          <p class="faq-answer">
+            Tak, do działu galerii. Prosimy o pliki w rozdzielczości co najmniej 2000 pikseli na dłuższym boku wraz z informacją, gdzie i kiedy powstało zdjęcie.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            Jak zmienić dane kontaktowe?
+          </summary>
+          <p class="faq-answer">
+            Wystarczy wiadomość przez formularz kontaktowy. Zmianę adresu wysyłki prosimy zgłaszać najpóźniej na tydzień przed premierą kolejnego numeru.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            Czy prowadzicie newsletter?
+          </summary>
+          <p class="faq-answer">
+            Tak. Raz w miesiącu wysyłamy zapowiedź nowego wydania. Nie zawiera reklam, a wypisać się można odnośnikiem w każdej wiadomości.
           </p>
         </details>
       </section>
     </main>
 
     <footer>
-      <a href="https://www.facebook.com/" class="social__link"
-        ><img src="img/facebook.svg" alt="Facebook" width="30" height="30"
-      /></a>
-      <a href="https://www.instagram.com/" class="social__link"
-        ><img src="img/instagram.svg" alt="Instagram" width="30" height="30"
-      /></a>
-      <a href="https://www.youtube.com/" class="social__link"
-        ><img src="img/youtube.svg" alt="Youtube" width="30" height="30"
-      /></a>
-      <a href="https://www.twitter.com/" class="social__link"
-        ><img src="img/twitter.svg" alt="Twitter" width="30" height="30"
-      /></a>
+      <h2 class="visually-hidden">Stopka</h2>
+      <div class="footer-grid">
+        <div>
+          <h2>Magazyn</h2>
+          <ul>
+            <li><a href="./index.html">Strona główna</a></li>
+            <li><a href="./ourProducts.html">Wszystkie artykuły</a></li>
+            <li><a href="./services.html">Działy tematyczne</a></li>
+            <li><a href="./gallery.html">Galeria</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Redakcja</h2>
+          <ul>
+            <li><a href="./aboutUs.html">O redakcji</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./faq.html">Najczęstsze pytania</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Czytelnik</h2>
+          <ul>
+            <li><a href="./pay.html">Prenumerata</a></li>
+            <li><a href="./privacy.html">Polityka prywatności</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Wybrane teksty</h2>
+          <ul>
+            <li><a href="./productFirst.html">Dlaczego niebo jest niebieskie</a></li>
+            <li><a href="./productSecond.html">Rzymski beton</a></li>
+            <li><a href="./productThird.html">Sieci grzybni w lesie</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="socialmedia">
+        <a href="https://www.facebook.com/" class="social__link" aria-label="CuriositiesMagazine na Facebooku" target="_blank" rel="noopener noreferrer"
+          ><img src="img/facebook.svg" alt="" width="30" height="30"
+        /></a>
+        <a href="https://www.instagram.com/" class="social__link" aria-label="CuriositiesMagazine na Instagramie" target="_blank" rel="noopener noreferrer"
+          ><img src="img/instagram.svg" alt="" width="30" height="30"
+        /></a>
+        <a href="https://www.youtube.com/" class="social__link" aria-label="CuriositiesMagazine na YouTube" target="_blank" rel="noopener noreferrer"
+          ><img src="img/youtube.svg" alt="" width="30" height="30"
+        /></a>
+        <a href="https://www.twitter.com/" class="social__link" aria-label="CuriositiesMagazine na X (dawniej Twitter)" target="_blank" rel="noopener noreferrer"
+          ><img src="img/twitter.svg" alt="" width="30" height="30"
+        /></a>
+      </div>
+
       <div class="footer">
         <p>
-          The rights to the navbar icons belong to
-          <a href="https://www.flaticon.com/" class="footer__link">FLATION</a>
+          Ikony w nawigacji pochodzą z
+          <a href="https://www.flaticon.com/" class="footer__link" target="_blank" rel="noopener noreferrer">Flaticon</a>.
         </p>
         <p class="footer__text">
-          All rights reserved &copy; 2023 Lorem ipsum |
-          <a href="./privacy.html" class="footer__link">Privacy Policy</a>
+          Wszelkie prawa zastrzeżone &copy; 2026 CuriositiesMagazine |
+          <a href="./privacy.html" class="footer__link">Polityka prywatności</a>
         </p>
       </div>
-      <p>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-          <img
-            style="border: 0; width: 88px; height: 31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Poprawny CSS!" />
-        </a>
-      </p>
     </footer>
   </body>
 </html>

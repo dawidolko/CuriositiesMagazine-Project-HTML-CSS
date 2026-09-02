@@ -1,61 +1,85 @@
 <!doctype html>
 <!-- Określa, że dokument jest typu HTML5 -->
-<html lang="zxx">
+<html lang="pl-PL">
   <!-- 'lang' powinno odpowiadać kodowi językowemu treści strony; 'zxx' to placeholder -->
 
   <head>
     <!-- Sekcja head zawierająca metadane i linki do zasobów -->
-    <title>responsive template - DESIGN PROJEKT</title>
+    <title>CuriositiesMagazine — ciekawostki o nauce, historii i naturze</title>
     <!-- Tytuł strony wyświetlany w karcie przeglądarki -->
     <meta charset="UTF-8" />
     <!-- Ustawienie kodowania znaków dla dokumentu -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+    <link rel="alternate icon" type="image/webp" href="img/icon.webp" />
     <!-- Meta tag dla odpowiedniego skalowania strony na różnych urządzeniach -->
     <!-- SVG first: transparent, so it sits correctly on a dark tab strip.
          The WebP stays as a fallback for browsers that skip SVG icons. -->
-    <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
-    <link rel="alternate icon" type="image/webp" href="img/icon.webp" />
     <!-- Link do ikony strony (favicon) -->
-    <meta name="description" content="This is an example description..." />
+    <meta name="description" content="Magazyn z ciekawostkami: krótkie, rzetelne teksty o nauce, historii, naturze i technologii. Nowe materiały w każdym wydaniu." />
     <!-- Opis strony, ważny dla SEO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- Optymalizacja ładowania fontów Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Optymalizacja ładowania fontów Google -->
     <link rel="preload" href="css/styleIndex.css" as="style" />
     <!-- Preload dla krytycznego CSS -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap"
-      rel="stylesheet" />
-    <!-- Link do zewnętrznego arkusza stylów fontów Google -->
     <link rel="stylesheet" href="css/styleIndex.css" />
+    <!-- Shared design system: tokens, components, dark mode, print. -->
+    <link rel="stylesheet" href="css/theme.css" />
     <!-- Link do głównego arkusza stylów -->
   
-    <!-- Canonical URL: the authoritative address for this page. -->
-    <link rel="canonical" href="https://projekt1.dawidolko.pl/" />
-
-    <!-- Open Graph / Twitter: controls how the page renders when shared. -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://projekt1.dawidolko.pl/" />
-    <meta property="og:title" content="CuriositiesMagazine" />
-    <meta property="og:description" content="Magazine-style responsive website built with semantic HTML and CSS." />
-    <meta property="og:site_name" content="CuriositiesMagazine" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CuriositiesMagazine" />
-    <meta name="twitter:description" content="Magazine-style responsive website built with semantic HTML and CSS." />
-
     <!-- Structured data: lets search engines describe the site in results. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "CuriositiesMagazine",
-        "url": "https://projekt1.dawidolko.pl",
-        "description": "Magazine-style responsive website built with semantic HTML and CSS.",
-        "author": { "@type": "Person", "name": "Dawid Olko", "url": "https://dawidolko.pl" }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://projekt1.dawidolko.pl/#website",
+            "name": "CuriositiesMagazine",
+            "url": "https://projekt1.dawidolko.pl/",
+            "description": "Magazyn z ciekawostkami o nauce, historii, naturze i technologii.",
+            "inLanguage": "pl-PL",
+            "publisher": { "@id": "https://projekt1.dawidolko.pl/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://projekt1.dawidolko.pl/#organization",
+            "name": "CuriositiesMagazine",
+            "url": "https://projekt1.dawidolko.pl/",
+            "description": "Miesięcznik popularnonaukowy wydawany od 2023 roku.",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://projekt1.dawidolko.pl/img/logo1.webp"
+            },
+            "founder": { "@type": "Person", "name": "Dawid Olko", "url": "https://dawidolko.pl" },
+            "foundingDate": "2023",
+            "sameAs": [
+              "https://www.facebook.com/",
+              "https://www.instagram.com/",
+              "https://www.youtube.com/",
+              "https://www.twitter.com/"
+            ]
+          }
+        ]
       }
     </script>
+  
+    <!-- Canonical URL: the authoritative address for this page. -->
+    <link rel="canonical" href="https://projekt1.dawidolko.pl/" />
+
+    <!-- Open Graph / Twitter Card: how the page renders when shared. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://projekt1.dawidolko.pl/" />
+    <meta property="og:title" content="CuriositiesMagazine — ciekawostki o nauce, historii i naturze" />
+    <meta property="og:description" content="Magazyn z ciekawostkami: krótkie, rzetelne teksty o nauce, historii, naturze i technologii. Nowe materiały w każdym wydaniu." />
+    <meta property="og:site_name" content="CuriositiesMagazine" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:image" content="https://projekt1.dawidolko.pl/img/logo1.webp" />
+    <meta property="og:image:alt" content="Winieta magazynu CuriositiesMagazine" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CuriositiesMagazine — ciekawostki o nauce, historii i naturze" />
+    <meta name="twitter:description" content="Magazyn z ciekawostkami: krótkie, rzetelne teksty o nauce, historii, naturze i technologii. Nowe materiały w każdym wydaniu." />
+    <meta name="twitter:image" content="https://projekt1.dawidolko.pl/img/logo1.webp" />
+    <meta name="author" content="Redakcja CuriositiesMagazine" />
+    <meta name="theme-color" content="#16232b" />
   </head>
 
   <body>
@@ -75,12 +99,12 @@
             aria-label="CuriositiesMagazine home"
             ><img
               src="img/logo1transparent.webp"
-              alt="Logo"
+              alt="CuriositiesMagazine"
               loading="lazy"
               width="100"
               height="100"
           /></a>
-          <nav>
+          <nav aria-label="Główne">
             <!-- Tutaj znajduje się menu nawigacyjne, składające się z listy linków -->
             <!-- Sekcja nawigacji -->
             <label id="hamburger" for="toggle">☰</label>
@@ -88,109 +112,68 @@
             <input type="checkbox" id="toggle" />
             <ul class="navbar-links">
               <li>
-                <a href="./index.html" class="nav__item"
+                <a href="./index.html" class="nav__item" aria-current="page"
                   ><ruby
-                    ><img
-                      src="img/home-alt.svg"
-                      alt="home"
-                      loading="lazy"
-                      width="25"
-                      height="25" />
-                    <rt>HOME</rt>
+                    ><img src="img/home-alt.svg" alt="" width="25" height="25" />
+                    <rt>Start</rt>
                   </ruby></a
                 >
               </li>
               <li>
                 <a href="./aboutUs.html" class="nav__item"
                   ><ruby
-                    ><img
-                      src="img/collage.svg"
-                      alt="collage"
-                      loading="lazy"
-                      width="25"
-                      height="25" />
-                    <rt>ABOUT US</rt>
+                    ><img src="img/collage.svg" alt="" width="25" height="25" />
+                    <rt>O redakcji</rt>
                   </ruby></a
                 >
               </li>
               <li>
                 <a href="./services.html" class="nav__item"
                   ><ruby
-                    ><img
-                      src="img/ereader.svg"
-                      alt="ereader"
-                      loading="lazy"
-                      width="25"
-                      height="25" />
-                    <rt>SERVICES</rt>
+                    ><img src="img/ereader.svg" alt="" width="25" height="25" />
+                    <rt>Działy</rt>
                   </ruby></a
                 >
               </li>
               <li>
                 <a href="./ourProducts.html" class="nav__item"
                   ><ruby
-                    ><img
-                      src="img/calendar-next.svg"
-                      alt="calendar"
-                      loading="lazy"
-                      width="25"
-                      height="25" />
-                    <rt>PRODUCTS</rt>
+                    ><img src="img/calendar-next.svg" alt="" width="25" height="25" />
+                    <rt>Artykuły</rt>
                   </ruby></a
                 >
               </li>
               <li>
                 <a href="./gallery.html" class="nav__item"
                   ><ruby
-                    ><img
-                      src="img/color-bucket.svg"
-                      alt="color-bucket"
-                      loading="lazy"
-                      width="25"
-                      height="25" />
-                    <rt>GALLERY</rt>
+                    ><img src="img/color-bucket.svg" alt="" width="25" height="25" />
+                    <rt>Galeria</rt>
                   </ruby></a
                 >
               </li>
               <li>
                 <a href="./contact.html" class="nav__item"
                   ><ruby
-                    ><img
-                      src="img/phone.svg"
-                      alt="phone"
-                      loading="lazy"
-                      width="25"
-                      height="25" />
-                    <rt>CONCACT</rt>
-                  </ruby>
-                </a>
+                    ><img src="img/phone.svg" alt="" width="25" height="25" />
+                    <rt>Kontakt</rt>
+                  </ruby></a
+                >
               </li>
               <li>
                 <a href="./faq.html" class="nav__item"
                   ><ruby
-                    ><img
-                      src="img/comment.svg"
-                      alt="comment"
-                      loading="lazy"
-                      width="25"
-                      height="25" />
+                    ><img src="img/comment.svg" alt="" width="25" height="25" />
                     <rt>FAQ</rt>
                   </ruby></a
                 >
               </li>
             </ul>
-            <ul style="margin-right: 10px">
+            <ul class="navbar-utility">
               <li>
-                <a href="./pay.html"
+                <a href="./pay.html" class="nav__item"
                   ><ruby
-                    ><img
-                      id="koszyk"
-                      src="img/shopping-cart.svg"
-                      alt="Koszyk"
-                      loading="lazy"
-                      width="25"
-                      height="25" />
-                    <rt>CART</rt>
+                    ><img id="koszyk" src="img/shopping-cart.svg" alt="" width="25" height="25" />
+                    <rt>Prenumerata</rt>
                   </ruby></a
                 >
               </li>
@@ -212,11 +195,11 @@
           </div>
         </div>
         <div class="header__title">
-          <p class="header__text">Lorem ipsum dolor sit amet,</p>
-          <p class="header__text--colorized">w consectetur adipiscing elit.</p>
+          <p class="header__text">Ciekawostki, które da się</p>
+          <p class="header__text--colorized">wytłumaczyć rzetelnie.</p>
           <div class="wrapper">
             <div class="typing-demo">
-              <a href="./services.html" class="header__cta">Lorem ipsum!</a>
+              <a href="./services.html" class="header__cta">Poznaj działy</a>
             </div>
           </div>
         </div>
@@ -228,25 +211,25 @@
       <section class="photoFirst">
         <!-- Sekcja pierwszego zestawu zdjęć -->
         <!-- Obrazy i tekst w tej sekcji -->
-        <h2 style="display: none">.</h2>
+        <h2 class="visually-hidden">Zdjęcia z bieżącego wydania</h2>
         <img
           id="photos1"
           src="img/mainPage4.webp"
-          alt="Lorem ipsum 1"
+          alt="Zamarznięte jezioro i ośnieżony las iglasty o zmierzchu"
           loading="lazy"
           width="300"
           height="300" />
         <img
           id="photos2"
           src="img/mainPage5.webp"
-          alt="Lorem ipsum 2"
+          alt="Górski krajobraz zimą, ze szczytami przyprószonymi śniegiem"
           loading="lazy"
           width="300"
           height="300" />
         <img
           id="photos3"
           src="img/mainPage6.webp"
-          alt="Lorem ipsum 3"
+          alt="Mglisty poranek nad taflą jeziora otoczonego lasem"
           loading="lazy"
           width="300"
           height="300" />
@@ -255,81 +238,68 @@
       <input type="checkbox" id="toggleImages" />
 
       <label for="toggleImages" id="showMoreButton" class="buttonFoto"
-        >LOAD MORE PHOTO</label
+        >Pokaż więcej zdjęć</label
       >
 
-      <div class="photoSecond">
-        <div class="animation">
-          <img
-            class="glasses"
-            src="https://kibbles.klausapp.com/assets/img/loader/glasses-regular.svg"
-            alt="oksy1"
-            width="140"
-            height="140" />
-          <img
-            class="logoCat"
-            src="https://kibbles.klausapp.com/assets/img/loader/main.svg"
-            alt="cot1"
-            width="140"
-            height="140" />
-        </div>
-        <div class="animation">
-          <img
-            class="glasses"
-            src="https://kibbles.klausapp.com/assets/img/loader/glasses-deal-with-it.svg"
-            alt="oksy2"
-            width="140"
-            height="140" />
-          <img
-            class="logoCat"
-            src="https://kibbles.klausapp.com/assets/img/loader/main.svg"
-            alt="cot2"
-            width="140"
-            height="140" />
-        </div>
-        <div class="animation">
-          <img
-            class="glasses"
-            src="https://kibbles.klausapp.com/assets/img/loader/glasses-hearts.svg"
-            alt="oksy3"
-            width="140"
-            height="140" />
-          <img
-            class="logoCat"
-            src="https://kibbles.klausapp.com/assets/img/loader/main.svg"
-            alt="cot3"
-            width="140"
-            height="140" />
-        </div>
-      </div>
+      <!-- Editorial standards: replaces a decorative block that pulled SVGs
+           from a third-party host. Everything here is local. -->
+      <section class="standards container">
+        <h2>Jak powstaje każdy tekst</h2>
+        <ul class="standards__list">
+          <li class="standards__item">
+            <p class="kicker">Krok 1</p>
+            <h3>Wybór tematu</h3>
+            <p>
+              Temat trafia do wydania tylko wtedy, gdy da się go rzetelnie
+              wyjaśnić na dwóch stronach i gdy istnieje recenzowane źródło.
+            </p>
+          </li>
+          <li class="standards__item">
+            <p class="kicker">Krok 2</p>
+            <h3>Weryfikacja źródeł</h3>
+            <p>
+              Każde twierdzenie łączymy z publikacją naukową lub materiałem
+              archiwalnym. Przy sporach naukowych piszemy wprost, że spór trwa.
+            </p>
+          </li>
+          <li class="standards__item">
+            <p class="kicker">Krok 3</p>
+            <h3>Redakcja i korekta</h3>
+            <p>
+              Tekst czyta drugi redaktor i korektorka. Sprawdzamy liczby,
+              jednostki oraz nazwiska przed skierowaniem materiału do składu.
+            </p>
+          </li>
+        </ul>
+      </section>
 
       <section class="photoSecond">
-        <h2 style="display: none">.</h2>
+        <h2 class="visually-hidden">Więcej zdjęć z wydania</h2>
         <img
           class="photosX"
           src="img/mainPage1.webp"
-          alt="Lorem ipsum 4"
+          alt="Strumień płynący przez zieloną dolinę pełną polnych kwiatów w słoneczny dzień"
           loading="lazy"
           width="300"
           height="300" />
         <img
           class="photosX"
           src="img/mainPage2.webp"
-          alt="Lorem ipsum 5"
+          alt="Leśny potok wśród omszałych kamieni i paproci"
           loading="lazy"
           width="300"
           height="300" />
         <img
           class="photosX"
           src="img/mainPage3.webp"
-          alt="Lorem ipsum 6"
+          alt="Łąka kwietna w pełnym słońcu na tle wzgórz"
           loading="lazy"
           width="300"
           height="300" />
       </section>
 
       <label for="toggleImages" id="showLessButton" class="buttonFoto"
-        >LOAD LESS PHOTO</label
+        >Pokaż mniej zdjęć</label
       >
 
       <div class="product-grid">
@@ -337,50 +307,49 @@
           <div class="product-image">
             <img
               src="img/gallery1.webp"
-              alt="Gallery 1"
+              alt="Kolaż zdjęć górskich jezior otoczonych iglastym lasem o świcie"
               loading="lazy"
               width="300"
               height="300" />
           </div>
           <div class="product-content">
-            <h3>LOREM IPSUM</h3>
-            <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
+            <h3>Kadry z wydania</h3>
+            <a href="./gallery.html" class="details-button">Zobacz galerię</a>
           </div>
         </div>
         <div id="drugie" class="product-item" style="background-color: #eae9e7">
           <div class="product-image">
             <img
               src="img/gallery2.webp"
-              alt="Gallery 2"
+              alt="Kolaż panoram turkusowych jezior polodowcowych wśród ośnieżonych szczytów"
               loading="lazy"
               width="300"
               height="300" />
           </div>
           <div class="product-content">
-            <h3>LOREM IPSUM</h3>
-            <a href="./gallery.html" class="details-button">VIEW DETAILS</a>
+            <h3>Archiwum zdjęć</h3>
+            <a href="./gallery.html" class="details-button">Zobacz galerię</a>
           </div>
         </div>
       </div>
 
       <section class="section">
-        <h2 class="section__heading">Lorem ipsum</h2>
+        <h2 class="section__heading">O magazynie</h2>
         <div class="about-us__textbox">
           <p class="about-us__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            ac felis mi. Nulla urna risus, malesuada nec blandit at, dictum a
-            est. Integer pulvinar dui elit, vitae vehicula est tempor venenatis.
-            Proin pulvinar pulvinar enim, et vestibulum leo. Vivamus placerat,
-            magna non commodo suscipit, sapien lorem finibus dui, nec interdum
-            lectus ante dictum mi.
+            CuriositiesMagazine to miesięcznik o zjawiskach, które łatwo minąć bez
+            zastanowienia: dlaczego niebo ma taki kolor, jak mierzono czas przed
+            zegarem, co naprawdę łączy drzewa w lesie. Piszemy krótko, ale nie
+            upraszczamy do granicy przekłamania — przy każdym tekście podajemy
+            źródła, a przy sporach naukowych mówimy wprost, że spór trwa.
           </p>
 
-          <label for="modalCheck" class="button">Lorem ipsum!</label>
+          <label for="modalCheck" class="button">Co nas wyróżnia</label>
           <input type="checkbox" id="modalCheck" style="display: none" />
 
           <div class="modal">
             <div class="modal-content">
-              <p>Tak dobrze trafiłeś! To lorem ipsum!</p>
+              <p>Każdy artykuł czyta drugi redaktor i korektorka, zanim trafi do składu.</p>
             </div>
           </div>
         </div>
@@ -388,18 +357,18 @@
         <div class="product-item4">
           <img
             src="img/item1.webp"
-            alt="Item"
+            alt="Abstrakcyjna grafika: koncentryczne okręgi i wstęgi w błękicie i zieleni"
             loading="lazy"
             width="1200"
             height="700" />
           <div class="info-box">
-            <h2>Lorem Ipsum</h2>
+            <h2>Wydanie specjalne: Światło</h2>
             <p class="price2">$50.00 <span class="old-price">$200.00</span></p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, et do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Numer w całości poświęcony światłu: od rozpraszania Rayleigha, przez
+              bioluminescencję głębinową, po historię latarni morskich.
             </p>
-            <a href="./services.html" class="details-button2">VIEW DETAILS</a>
+            <a href="./services.html" class="details-button2">Zobacz galerię</a>
           </div>
         </div>
 
@@ -408,109 +377,109 @@
             <div id="slide-1" class="slide">
               <img
                 src="img/mainPage1.webp"
-                alt="Lorem ipsum 1v2"
+                alt="Strumień płynący przez zieloną dolinę pełną polnych kwiatów w słoneczny dzień"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Zorza polarna</p>
+                <p class="price">Natura</p>
               </div>
             </div>
             <div id="slide-2" class="slide">
               <img
                 src="img/mainPage2.webp"
-                alt="Lorem ipsum 2v2"
+                alt="Leśny potok wśród omszałych kamieni i paproci"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Bioluminescencja</p>
+                <p class="price">Natura</p>
               </div>
             </div>
             <div id="slide-3" class="slide">
               <img
                 src="img/mainPage10.webp"
-                alt="Lorem ipsum 3v2"
+                alt="Jezioro w kotlinie górskiej odbijające szczyty"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Kryształy lodu</p>
+                <p class="price">Nauka</p>
               </div>
             </div>
             <div id="slide-4" class="slide">
               <img
                 src="img/mainPage11.webp"
-                alt="Lorem ipsum 4v2"
+                alt="Las iglasty schodzący ku brzegowi jeziora"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Wydmy</p>
+                <p class="price">Natura</p>
               </div>
             </div>
             <div id="slide-5" class="slide">
               <img
                 src="img/mainPage14.webp"
-                alt="Lorem ipsum 5v2"
+                alt="Górski szczyt ponad warstwą chmur"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Mgła radiacyjna</p>
+                <p class="price">Nauka</p>
               </div>
             </div>
             <div id="slide-6" class="slide">
               <img
                 src="img/mainPage13.webp"
-                alt="Lorem ipsum 6v2"
+                alt="Rozległa równina z pojedynczym drzewem na horyzoncie"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Halo słoneczne</p>
+                <p class="price">Nauka</p>
               </div>
             </div>
             <div id="slide-7" class="slide">
               <img
                 src="img/mainPage12.webp"
-                alt="Lorem ipsum 7v2"
+                alt="Skaliste wybrzeże w świetle zachodzącego słońca"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Fale stojące</p>
+                <p class="price">Nauka</p>
               </div>
             </div>
             <div id="slide-8" class="slide">
               <img
                 src="img/mainPage8.webp"
-                alt="Lorem ipsum 8v2"
+                alt="Panorama doliny rzecznej widziana z góry"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Erozja skalna</p>
+                <p class="price">Natura</p>
               </div>
             </div>
             <div id="slide-9" class="slide">
               <img
                 src="img/mainPage9.webp"
-                alt="Lorem ipsum 9v2"
+                alt="Wschód słońca nad pasmem górskim"
                 loading="lazy"
                 width="260"
                 height="400" />
               <div class="slide-description">
-                <p class="product-name">Lorem Ipsum</p>
-                <p class="price">10$</p>
+                <p class="product-name">Zaćmienie</p>
+                <p class="price">Kosmos</p>
               </div>
             </div>
           </div>
@@ -523,8 +492,7 @@
             class="slider-radio" />
           <label
             for="slide-radio-1v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-1'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 1</span></label>
 
           <input
             type="radio"
@@ -533,8 +501,7 @@
             class="slider-radio" />
           <label
             for="slide-radio-2v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-2'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 2</span></label>
 
           <input
             type="radio"
@@ -543,8 +510,7 @@
             class="slider-radio" />
           <label
             for="slide-radio-3v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-3'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 3</span></label>
 
           <input
             type="radio"
@@ -553,8 +519,7 @@
             class="slider-radio" />
           <label
             for="slide-radio-4v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-4'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 4</span></label>
 
           <input
             type="radio"
@@ -564,8 +529,7 @@
             checked />
           <label
             for="slide-radio-5v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-5'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 5</span></label>
 
           <input
             type="radio"
@@ -574,8 +538,7 @@
             class="slider-radio" />
           <label
             for="slide-radio-6v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-6'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 6</span></label>
 
           <input
             type="radio"
@@ -584,8 +547,7 @@
             class="slider-radio" />
           <label
             for="slide-radio-7v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-7'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 7</span></label>
 
           <input
             type="radio"
@@ -594,8 +556,7 @@
             class="slider-radio" />
           <label
             for="slide-radio-8v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-8'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 8</span></label>
 
           <input
             type="radio"
@@ -604,8 +565,7 @@
             class="slider-radio" />
           <label
             for="slide-radio-9v2"
-            class="slider-label"
-            onclick="window.location.href = '#slide-9'"></label>
+            class="slider-label"><span class="visually-hidden">Przejdź do zdjęcia 9</span></label>
         </div>
       </section>
 
@@ -613,15 +573,15 @@
         <div class="product-item1">
           <img
             src="img/gallery9.webp"
-            alt="LoremIpsum"
+            alt="Kolaż onirycznych scen: postacie nad wodą, księżyc i kolumnady o zmierzchu"
             loading="lazy"
             width="200"
             height="200" />
           <div class="overlay">
             <div class="text">
-              <h3>Lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-              <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
+              <h3>Dział: Nauka</h3>
+              <p>Fizyka codzienności, chemia i astronomia w krótkich formach.</p>
+              <a href="./ourProducts.html" class="details-button-x">Zobacz artykuły</a>
             </div>
           </div>
         </div>
@@ -629,41 +589,41 @@
         <div class="product-item1">
           <img
             src="img/gallery12.webp"
-            alt="Loremer"
+            alt="Kolaż detali architektonicznych i motywów roślinnych w złocie i błękicie"
             loading="lazy"
             width="200"
             height="200" />
-          <h3>Lorem</h3>
+          <h3>Meteoryty</h3>
           <div class="price-rating">
-            <span class="price">30$</span>
+            <span class="price">Nauka</span>
             <span class="rating"
               ><img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja1"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja2"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja3"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja4"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_szara.svg"
-                alt="Promocja5"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
@@ -674,41 +634,41 @@
         <div class="product-item1">
           <img
             src="img/gallery11.webp"
-            alt="Loremer2"
+            alt="Kolaż widoków miast odbitych w wodzie i kwitnących łąk"
             loading="lazy"
             width="200"
             height="200" />
-          <h3>Lorem</h3>
+          <h3>Jaskinie</h3>
           <div class="price-rating">
-            <span class="price">30$</span>
+            <span class="price">Nauka</span>
             <span class="rating"
               ><img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja6"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja7"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja8"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja9"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_szara.svg"
-                alt="Promocja10"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
@@ -719,41 +679,41 @@
         <div class="product-item1">
           <img
             src="img/gallery10.webp"
-            alt="Loremer3"
+            alt="Kolaż pejzaży i martwych natur: pola zbóż, żaglówka i rzeźba Buddy"
             loading="lazy"
             width="200"
             height="200" />
-          <h3>Lorem</h3>
+          <h3>Ptasie wędrówki</h3>
           <div class="price-rating">
-            <span class="price">30$</span>
+            <span class="price">Nauka</span>
             <span class="rating"
               ><img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja11"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja12"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja13"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja14"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_szara.svg"
-                alt="Promocja15"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
@@ -766,41 +726,41 @@
         <div class="product-item1">
           <img
             src="img/abootUs4.webp"
-            alt="Loremer4"
+            alt="Spotkanie redakcyjne przy stole z notatkami i wykresami"
             loading="lazy"
             width="200"
             height="200" />
-          <h3>Lorem</h3>
+          <h3>Wulkany</h3>
           <div class="price-rating">
-            <span class="price">30$</span>
+            <span class="price">Nauka</span>
             <span class="rating"
               ><img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja16"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja17"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja18"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja19"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_szara.svg"
-                alt="Promocja20"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
@@ -811,41 +771,41 @@
         <div class="product-item1">
           <img
             src="img/abootUs3.webp"
-            alt="Loremer5"
+            alt="Dwie osoby z zespołu pracujące przy laptopie w jasnym biurze"
             loading="lazy"
             width="200"
             height="200" />
-          <h3>Lorem</h3>
+          <h3>Głębiny</h3>
           <div class="price-rating">
-            <span class="price">30$</span>
+            <span class="price">Nauka</span>
             <span class="rating"
               ><img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja21"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja22"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja23"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja24"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_szara.svg"
-                alt="Promocja25"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
@@ -856,41 +816,41 @@
         <div class="product-item1">
           <img
             src="img/abootUs2.webp"
-            alt="Loremer6"
+            alt="Redaktorzy rozmawiający nad rozłożonymi wydrukami artykułów"
             loading="lazy"
             width="200"
             height="200" />
-          <h3>Lorem</h3>
+          <h3>Pustynie</h3>
           <div class="price-rating">
-            <span class="price">30$</span>
+            <span class="price">Nauka</span>
             <span class="rating"
               ><img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja26"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja27"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja28"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_zolta.svg"
-                alt="Promocja29"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
               <img
                 src="img/gwiazda_szara.svg"
-                alt="Promocja30"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
@@ -901,15 +861,15 @@
         <div class="product-item1">
           <img
             src="img/abootUs1.webp"
-            alt="Loremer7"
+            alt="Zespół redakcyjny przy stole konferencyjnym omawiający materiały do wydania"
             loading="lazy"
             width="200"
             height="200" />
           <div class="overlay">
             <div class="text">
-              <h3>Lorem</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-              <a href="./ourProducts.html" class="details-button-x">VIEW ALL</a>
+              <h3>Dział: Natura</h3>
+              <p>Biologia, ekologia i zjawiska pogodowe objaśnione bez żargonu.</p>
+              <a href="./ourProducts.html" class="details-button-x">Zobacz artykuły</a>
             </div>
           </div>
         </div>
@@ -917,63 +877,63 @@
 
       <section class="collection">
         <div class="collection__men">
-          <h3 class="collection__heading">Product 1 Collection</h3>
+          <h3 class="collection__heading">Zbiór: Kosmos</h3>
           <div class="collection__shadow">
             <img
               src="img/product1.webp"
-              alt="product 1"
+              alt="Piłka do futbolu amerykańskiego zamknięta w szklanej kuli na podstawce"
               class="collection__img"
               loading="lazy"
               width="150"
               height="150" />
           </div>
-          <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          <a class="collection__btn" href="./ourProducts.html">Przeglądaj</a>
         </div>
         <div class="collection__women">
-          <h3 class="collection__heading">Product 2 Collection</h3>
+          <h3 class="collection__heading">Zbiór: Historia</h3>
           <div class="collection__shadow">
             <img
               src="img/product7.webp"
-              alt="product 2"
+              alt="Obraz na płótnie przedstawiający górską dolinę we mgle, oparty o ścianę"
               class="collection__img"
               loading="lazy"
               width="150"
               height="150" />
           </div>
-          <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          <a class="collection__btn" href="./ourProducts.html">Przeglądaj</a>
         </div>
         <div class="collection__kids">
-          <h3 class="collection__heading">Product 3 Collection</h3>
+          <h3 class="collection__heading">Zbiór: Technologia</h3>
           <div class="collection__shadow">
             <img
               src="img/product3.webp"
-              alt="product 3"
+              alt="Przedmiot z kolekcji ilustracji magazynu prezentowany na jasnym tle"
               class="collection__img"
               loading="lazy"
               width="150"
               height="150" />
           </div>
-          <a class="collection__btn" href="./ourProducts.html">explore more</a>
+          <a class="collection__btn" href="./ourProducts.html">Przeglądaj</a>
         </div>
       </section>
       <section class="offer">
-        <h2 style="display: none">.</h2>
+        <h2 class="visually-hidden">Polecane materiały redakcji</h2>
         <div class="offer__body">
           <img
             src="img/logo1transparent.webp"
-            alt="LOGOv2"
+            alt="CuriositiesMagazine"
             class="offer__img"
             loading="lazy"
             width="300"
             height="300" />
           <div class="offer__content container">
-            <p class="offer__heading">SPECIAL OFFER</p>
-            <p class="offer__title">UPTO 70% OFF</p>
+            <p class="offer__heading">Prenumerata roczna</p>
+            <p class="offer__title">12 wydań w roku</p>
             <p class="offer__text">
-              Upgrade your footwear collection with our 70% off special deal!
-              LOREM IPSUM!
+              Każde wydanie to dwadzieścia stron tekstów z listą źródeł. Wariant
+              cyfrowy dostępny w dniu premiery, drukowany wysyłamy pocztą.
             </p>
-            <a href="./ourProducts.html" class="details-button">VIEW ALL</a>
+            <a href="./ourProducts.html" class="details-button">Zobacz artykuły</a>
           </div>
         </div>
       </section>
@@ -983,52 +943,52 @@
           <div class="service__box">
             <img
               src="img/pay1.webp"
-              alt="pay1"
+              alt=""
               loading="lazy"
               width="150"
               height="150" />
             <div class="service__text">
-              <h4 class="service__title">FREE SHIPING</h4>
-              <p class="service__describe">All Lorem ipsum $150</p>
+              <h3 class="service__title">Weryfikowane źródła</h3>
+              <p class="service__describe">Przypisy przy każdym twierdzeniu</p>
             </div>
           </div>
           <div class="service__box">
             <img
               src="img/pay2.webp"
-              alt="pay2"
+              alt=""
               loading="lazy"
               width="150"
               height="150" />
             <div class="service__text">
-              <h4 class="service__title">QUICK PAYMENT</h4>
-              <p class="service__describe">100% Lorem ipsum</p>
+              <h3 class="service__title">Podwójna korekta</h3>
+              <p class="service__describe">Drugi redaktor czyta każdy tekst</p>
             </div>
           </div>
           <div class="service__box">
             <img
               src="img/pay1.webp"
-              alt="pay3"
+              alt=""
               loading="lazy"
               width="150"
               height="150" />
             <div class="service__text">
-              <h4 class="service__title">FREE RETURNS</h4>
-              <p class="service__describe">Lorem ipsum 30 days</p>
+              <h3 class="service__title">Sprostowania</h3>
+              <p class="service__describe">Publikujemy je w kolejnym wydaniu</p>
             </div>
           </div>
         </div>
       </section>
 
       <div class="load-more-container">
-        <a href="./gallery.html" class="load-more-btn">LOAD MORE PRODUCTS</a>
+        <a href="./gallery.html" class="load-more-btn">Zobacz wszystkie artykuły</a>
       </div>
 
       <div class="newsletter-signup-section">
         <div class="newsletter-signup-container">
           <div class="newsletter-content">
-            <h2 class="newsletter-title">SIGN UP FOR THE NEWSLETTER</h2>
+            <h2 class="newsletter-title">Zapisz się do newslettera</h2>
             <p class="newsletter-description">
-              Subscribe for the latest stories and promotions
+              Raz w miesiącu wysyłamy zapowiedź nowego wydania. Bez reklam.
             </p>
           </div>
           <form class="newsletter-form">
@@ -1042,7 +1002,7 @@
             <button type="submit" class="newsletter-submit-btn" aria-label="Zapisz się do newslettera">
               <img
                 src="img/phone.svg"
-                alt="Send"
+                alt=""
                 loading="lazy"
                 width="30"
                 height="30" />
@@ -1052,62 +1012,65 @@
       </div>
     </main>
     <footer>
+      <h2 class="visually-hidden">Stopka</h2>
+      <div class="footer-grid">
+        <div>
+          <h2>Magazyn</h2>
+          <ul>
+            <li><a href="./index.html">Strona główna</a></li>
+            <li><a href="./ourProducts.html">Wszystkie artykuły</a></li>
+            <li><a href="./services.html">Działy tematyczne</a></li>
+            <li><a href="./gallery.html">Galeria</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Redakcja</h2>
+          <ul>
+            <li><a href="./aboutUs.html">O redakcji</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./faq.html">Najczęstsze pytania</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Czytelnik</h2>
+          <ul>
+            <li><a href="./pay.html">Prenumerata</a></li>
+            <li><a href="./privacy.html">Polityka prywatności</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Wybrane teksty</h2>
+          <ul>
+            <li><a href="./productFirst.html">Dlaczego niebo jest niebieskie</a></li>
+            <li><a href="./productSecond.html">Rzymski beton</a></li>
+            <li><a href="./productThird.html">Sieci grzybni w lesie</a></li>
+          </ul>
+        </div>
+      </div>
+
       <div id="socialmedia">
-        <!-- Linki do mediów społecznościowych -->
-        <a href="https://www.facebook.com/" class="social__link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="img/facebook.svg"
-            alt="Facebook"
-            loading="lazy"
-            width="30"
-            height="30"
+        <a href="https://www.facebook.com/" class="social__link" aria-label="CuriositiesMagazine na Facebooku" target="_blank" rel="noopener noreferrer"
+          ><img src="img/facebook.svg" alt="" width="30" height="30"
         /></a>
-        <a href="https://www.instagram.com/" class="social__link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="img/instagram.svg"
-            alt="Instagram"
-            loading="lazy"
-            width="30"
-            height="30"
+        <a href="https://www.instagram.com/" class="social__link" aria-label="CuriositiesMagazine na Instagramie" target="_blank" rel="noopener noreferrer"
+          ><img src="img/instagram.svg" alt="" width="30" height="30"
         /></a>
-        <a href="https://www.youtube.com/" class="social__link" aria-label="Youtube" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="img/youtube.svg"
-            alt="Youtube"
-            loading="lazy"
-            width="30"
-            height="30"
+        <a href="https://www.youtube.com/" class="social__link" aria-label="CuriositiesMagazine na YouTube" target="_blank" rel="noopener noreferrer"
+          ><img src="img/youtube.svg" alt="" width="30" height="30"
         /></a>
-        <a href="https://www.twitter.com/" class="social__link" aria-label="Twitter" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="img/twitter.svg"
-            alt="Twitter"
-            loading="lazy"
-            width="30"
-            height="30"
+        <a href="https://www.twitter.com/" class="social__link" aria-label="CuriositiesMagazine na X (dawniej Twitter)" target="_blank" rel="noopener noreferrer"
+          ><img src="img/twitter.svg" alt="" width="30" height="30"
         /></a>
       </div>
+
       <div class="footer">
         <p>
-          The rights to the navbar icons belong to
-          <a href="https://www.flaticon.com/" class="footer__link">FLATION</a>
+          Ikony w nawigacji pochodzą z
+          <a href="https://www.flaticon.com/" class="footer__link" target="_blank" rel="noopener noreferrer">Flaticon</a>.
         </p>
-        <!-- Stopka strony -->
         <p class="footer__text">
-          <!-- Tekst i linki w stopce -->
-          All rights reserved &copy; 2023 Lorem ipsum |
-          <a href="./privacy.html" class="footer__link">Privacy Policy</a>
-        </p>
-      </div>
-      <div>
-        <!-- Dodatkowe informacje lub linki -->
-        <p>
-          <a href="https://jigsaw.w3.org/css-validator/check/referer" aria-label="Validate the CSS of this page with the W3C validator">
-            <img
-              style="border: 0; width: 88px; height: 31px"
-              src="https://jigsaw.w3.org/css-validator/images/vcss"
-              alt="Poprawny CSS!" />
-          </a>
+          Wszelkie prawa zastrzeżone &copy; 2026 CuriositiesMagazine |
+          <a href="./privacy.html" class="footer__link">Polityka prywatności</a>
         </p>
       </div>
     </footer>

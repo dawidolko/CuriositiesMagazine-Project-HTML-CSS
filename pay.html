@@ -3,21 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lorem ipsum - CART</title>
-    <link rel="icon" type="image/webp" sizes="32x32" href="img/icon.webp" />
-    <meta
-      name="description"
-      content="This is an example description and this is my website which is my project. This website is my property and was created to complete the course." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap"
-      rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+    <link rel="alternate icon" type="image/webp" href="img/icon.webp" />
+    <title>Prenumerata — CuriositiesMagazine</title>
+    <meta name="description" content="Zamów prenumeratę CuriositiesMagazine. Wybierz wariant cyfrowy lub drukowany i dokończ zamówienie." />
     <link rel="preload" href="css/stylePay.css" as="style" />
     <link rel="stylesheet" href="css/stylePay.css" />
+    <!-- Shared design system: tokens, components, dark mode, print. -->
+    <link rel="stylesheet" href="css/theme.css" />
+  
+    <!-- Canonical URL: the authoritative address for this page. -->
+    <link rel="canonical" href="https://projekt1.dawidolko.pl/pay.html" />
+
+    <!-- Open Graph / Twitter Card: how the page renders when shared. -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://projekt1.dawidolko.pl/pay.html" />
+    <meta property="og:title" content="Prenumerata — CuriositiesMagazine" />
+    <meta property="og:description" content="Zamów prenumeratę CuriositiesMagazine. Wybierz wariant cyfrowy lub drukowany i dokończ zamówienie." />
+    <meta property="og:site_name" content="CuriositiesMagazine" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:image" content="https://projekt1.dawidolko.pl/img/logo1.webp" />
+    <meta property="og:image:alt" content="Winieta magazynu CuriositiesMagazine" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Prenumerata — CuriositiesMagazine" />
+    <meta name="twitter:description" content="Zamów prenumeratę CuriositiesMagazine. Wybierz wariant cyfrowy lub drukowany i dokończ zamówienie." />
+    <meta name="twitter:image" content="https://projekt1.dawidolko.pl/img/logo1.webp" />
+    <meta name="author" content="Redakcja CuriositiesMagazine" />
+    <meta name="theme-color" content="#16232b" />
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://projekt1.dawidolko.pl/" },
+          { "@type": "ListItem", "position": 2, "name": "Prenumerata", "item": "https://projekt1.dawidolko.pl/pay.html" }
+        ]
+      }
+    </script>
   </head>
 
   <body>
+    <!-- First focusable element: lets a keyboard user skip the navigation. -->
+    <a class="skip-link" href="#main-content">Przejdź do treści</a>
     <header>
       <div class="loading-top"></div>
       <div class="loading-bottom"></div>
@@ -26,140 +53,107 @@
         <a href="./index.html" class="logo"
           ><img
             src="img/logo1transparent.webp"
-            alt="Logo"
+            alt="CuriositiesMagazine"
             loading="lazy"
             width="80"
             height="80"
         /></a>
-        <nav>
+        <nav aria-label="Główne">
           <label id="hamburger" for="toggle">☰</label
           ><input type="checkbox" id="toggle" />
 
           <ul class="navbar-links">
-            <li>
-              <a href="./index.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/home-alt.svg"
-                    alt="home"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>HOME</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./aboutUs.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/collage.svg"
-                    alt="collage"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>ABOUT US</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./services.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/ereader.svg"
-                    alt="ereader"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>SERVICES</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./ourProducts.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/calendar-next.svg"
-                    alt="calendar"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>PRODUCTS</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./gallery.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/color-bucket.svg"
-                    alt="color-bucket"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>GALLERY</rt>
-                </ruby></a
-              >
-            </li>
-            <li>
-              <a href="./contact.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/phone.svg"
-                    alt="phone"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>CONTACT</rt>
-                </ruby>
-              </a>
-            </li>
-            <li>
-              <a href="./faq.html" class="nav__item"
-                ><ruby
-                  ><img
-                    src="img/comment.svg"
-                    alt="comment"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>FAQ</rt>
-                </ruby></a
-              >
-            </li>
-          </ul>
-          <ul style="margin-right: 10px">
-            <li>
-              <a href="./pay.html"
-                ><ruby
-                  ><img
-                    id="koszyk"
-                    src="img/shopping-cart.svg"
-                    alt="cart"
-                    loading="lazy"
-                    width="25"
-                    height="25" />
-                  <rt>CART</rt>
-                </ruby></a
-              >
-            </li>
-          </ul>
+              <li>
+                <a href="./index.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/home-alt.svg" alt="" width="25" height="25" />
+                    <rt>Start</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./aboutUs.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/collage.svg" alt="" width="25" height="25" />
+                    <rt>O redakcji</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./services.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/ereader.svg" alt="" width="25" height="25" />
+                    <rt>Działy</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./ourProducts.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/calendar-next.svg" alt="" width="25" height="25" />
+                    <rt>Artykuły</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./gallery.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/color-bucket.svg" alt="" width="25" height="25" />
+                    <rt>Galeria</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./contact.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/phone.svg" alt="" width="25" height="25" />
+                    <rt>Kontakt</rt>
+                  </ruby></a
+                >
+              </li>
+              <li>
+                <a href="./faq.html" class="nav__item"
+                  ><ruby
+                    ><img src="img/comment.svg" alt="" width="25" height="25" />
+                    <rt>FAQ</rt>
+                  </ruby></a
+                >
+              </li>
+            </ul>
+          <ul class="navbar-utility">
+              <li>
+                <a href="./pay.html" class="nav__item" aria-current="page"
+                  ><ruby
+                    ><img id="koszyk" src="img/shopping-cart.svg" alt="" width="25" height="25" />
+                    <rt>Prenumerata</rt>
+                  </ruby></a
+                >
+              </li>
+            </ul>
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
+      <nav class="breadcrumbs" aria-label="Okruszki">
+        <ol>
+          <li><a href="./index.html">Strona główna</a></li>
+          <li><span aria-current="page">Prenumerata</span></li>
+        </ol>
+      </nav>
       <section class="section contact" id="contact">
-        <h1 style="display: none">.</h1>
-        <h2 style="text-align: center">YOUR CART!</h2>
+        <h1>Prenumerata CuriositiesMagazine</h1>
+        <p class="page-intro__lede">Wybierz wariant prenumeraty i dokończ zamówienie. Dwanaście wydań w roku.</p>
+        <h2>Twoje zamówienie</h2>
         <div class="shopping-cart">
-          <div class="title">Shopping Cart</div>
+          <div class="title">Podsumowanie koszyka</div>
           <table class="cart-items">
+            <caption>Pozycje w koszyku</caption>
             <thead>
               <tr>
-                <th>Product</th>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Total</th>
+                <th scope="col">Pozycja</th>
+                <th scope="col">Nazwa</th>
+                <th scope="col">Liczba</th>
+                <th scope="col">Razem</th>
               </tr>
             </thead>
             <tbody>
@@ -167,28 +161,31 @@
                 <td>-</td>
                 <td>-</td>
                 <td>
-                  <button>-</button>
+                  <button type="button" aria-label="Zmniejsz liczbę egzemplarzy">-</button>
+                  <label class="visually-hidden" for="qty">Liczba egzemplarzy</label>
                   <input
+                    id="qty"
                     type="number"
                     value="0"
+                    aria-label="Liczba egzemplarzy"
                     style="width: 50px; text-align: center"
                     disabled />
-                  <button>+</button>
+                  <button type="button" aria-label="Zwiększ liczbę egzemplarzy">+</button>
                 </td>
                 <td>$0.00</td>
               </tr>
             </tbody>
           </table>
           <div class="cart-total">
-            <span>Total: $0.00</span>
+            <span>Razem: 0,00 zł</span>
           </div>
-          <a class="button" href="./ourProducts.html">Continue shopping</a>
+          <a class="button" href="./ourProducts.html">Wróć do artykułów</a>
         </div>
         <div class="credit-card-form">
-          <h2>CREDIT CARD</h2>
+          <h2>Dane płatności</h2>
           <form id="card-form" action="#thankyou">
             <fieldset>
-              <legend>Card Details</legend>
+              <legend>Dane karty płatniczej</legend>
               <div class="infocard">
                 <img src="img/visa.webp" alt="Visa" height="50" width="50" />
                 <img
@@ -198,7 +195,7 @@
                   width="50" />
               </div>
               <div class="form-group">
-                <label for="cardNumber">CARD NUMBER</label>
+                <label for="cardNumber">Numer karty <span class="required-mark" aria-hidden="true">*</span></label>
                 <input
                   type="text"
                   id="cardNumber"
@@ -208,7 +205,7 @@
                   required />
               </div>
               <div class="form-group">
-                <label for="expiryMonth">EXPIRY DAY</label>
+                <label for="expiryMonth">Dzień ważności</label>
                 <select id="expiryMonth" name="expiryMonth">
                   <option value="1">01</option>
                   <option value="2">02</option>
@@ -244,7 +241,7 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="expiryYear">EXPIRY MONTH</label>
+                <label for="expiryYear">Miesiąc ważności</label>
                 <select id="expiryYear" name="expiryYear">
                   <option value="01">January</option>
                   <option value="02">February</option>
@@ -261,17 +258,17 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="cardHolder">CARDHOLDER NAME</label>
+                <label for="cardHolder">Imię i nazwisko posiadacza <span class="required-mark" aria-hidden="true">*</span></label>
                 <input
                   type="text"
                   id="cardHolder"
                   name="cardHolder"
                   pattern="[A-Za-z\s]+"
-                  placeholder="JEAN O IMPUSM"
+                  placeholder="JAN KOWALSKI"
                   required />
               </div>
               <div class="form-group">
-                <button type="submit">CONTINUE</button>
+                <button type="submit" class="button">Potwierdź zamówienie</button>
               </div>
             </fieldset>
           </form>
@@ -279,42 +276,73 @@
       </section>
       <div id="thankyou">
         <div class="thankyou-content">
-          <p>Zamówiłeś produkt. Zajrzyj na email! Miłego dnia!</p>
+          <p>Dziękujemy za zamówienie. Potwierdzenie wysłaliśmy na podany adres e-mail.</p>
         </div>
       </div>
     </main>
 
     <footer>
-      <a href="https://www.facebook.com/" class="social__link"
-        ><img src="img/facebook.svg" alt="Facebook" width="30" height="30"
-      /></a>
-      <a href="https://www.instagram.com/" class="social__link"
-        ><img src="img/instagram.svg" alt="Instagram" width="30" height="30"
-      /></a>
-      <a href="https://www.youtube.com/" class="social__link"
-        ><img src="img/youtube.svg" alt="Youtube" width="30" height="30"
-      /></a>
-      <a href="https://www.twitter.com/" class="social__link"
-        ><img src="img/twitter.svg" alt="Twitter" width="30" height="30"
-      /></a>
+      <h2 class="visually-hidden">Stopka</h2>
+      <div class="footer-grid">
+        <div>
+          <h2>Magazyn</h2>
+          <ul>
+            <li><a href="./index.html">Strona główna</a></li>
+            <li><a href="./ourProducts.html">Wszystkie artykuły</a></li>
+            <li><a href="./services.html">Działy tematyczne</a></li>
+            <li><a href="./gallery.html">Galeria</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Redakcja</h2>
+          <ul>
+            <li><a href="./aboutUs.html">O redakcji</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="./faq.html">Najczęstsze pytania</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Czytelnik</h2>
+          <ul>
+            <li><a href="./pay.html">Prenumerata</a></li>
+            <li><a href="./privacy.html">Polityka prywatności</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Wybrane teksty</h2>
+          <ul>
+            <li><a href="./productFirst.html">Dlaczego niebo jest niebieskie</a></li>
+            <li><a href="./productSecond.html">Rzymski beton</a></li>
+            <li><a href="./productThird.html">Sieci grzybni w lesie</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="socialmedia">
+        <a href="https://www.facebook.com/" class="social__link" aria-label="CuriositiesMagazine na Facebooku" target="_blank" rel="noopener noreferrer"
+          ><img src="img/facebook.svg" alt="" width="30" height="30"
+        /></a>
+        <a href="https://www.instagram.com/" class="social__link" aria-label="CuriositiesMagazine na Instagramie" target="_blank" rel="noopener noreferrer"
+          ><img src="img/instagram.svg" alt="" width="30" height="30"
+        /></a>
+        <a href="https://www.youtube.com/" class="social__link" aria-label="CuriositiesMagazine na YouTube" target="_blank" rel="noopener noreferrer"
+          ><img src="img/youtube.svg" alt="" width="30" height="30"
+        /></a>
+        <a href="https://www.twitter.com/" class="social__link" aria-label="CuriositiesMagazine na X (dawniej Twitter)" target="_blank" rel="noopener noreferrer"
+          ><img src="img/twitter.svg" alt="" width="30" height="30"
+        /></a>
+      </div>
+
       <div class="footer">
         <p>
-          The rights to the navbar icons belong to
-          <a href="https://www.flaticon.com/" class="footer__link">FLATION</a>
+          Ikony w nawigacji pochodzą z
+          <a href="https://www.flaticon.com/" class="footer__link" target="_blank" rel="noopener noreferrer">Flaticon</a>.
         </p>
         <p class="footer__text">
-          All rights reserved &copy; 2023 Lorem ipsum |
-          <a href="./privacy.html" class="footer__link">Privacy Policy</a>
+          Wszelkie prawa zastrzeżone &copy; 2026 CuriositiesMagazine |
+          <a href="./privacy.html" class="footer__link">Polityka prywatności</a>
         </p>
       </div>
-      <p>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-          <img
-            style="border: 0; width: 88px; height: 31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Poprawny CSS!" />
-        </a>
-      </p>
     </footer>
   </body>
 </html>
