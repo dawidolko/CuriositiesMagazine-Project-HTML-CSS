@@ -57,6 +57,3 @@
     Header unset ETag
 </IfModule>
 FileETag None
-
-# Custom error page
-ErrorDocument 404 /404.html

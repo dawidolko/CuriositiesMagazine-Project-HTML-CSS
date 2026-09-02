@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-# Nothing here needs crawling.
-Disallow: /kss/
-Disallow: /docs/
-
-Sitemap: https://projekt1.dawidolko.pl/sitemap.xml
