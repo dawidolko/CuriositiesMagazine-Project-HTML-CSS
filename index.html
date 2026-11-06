@@ -1,61 +1,35 @@
 <!doctype html>
-<!-- Określa, że dokument jest typu HTML5 -->
-<html lang="zxx">
-  <!-- 'lang' powinno odpowiadać kodowi językowemu treści strony; 'zxx' to placeholder -->
+<html lang="en">
 
   <head>
-    <!-- Sekcja head zawierająca metadane i linki do zasobów -->
-    <title>responsive template - DESIGN PROJEKT</title>
-    <!-- Tytuł strony wyświetlany w karcie przeglądarki -->
     <meta charset="UTF-8" />
-    <!-- Ustawienie kodowania znaków dla dokumentu -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Meta tag dla odpowiedniego skalowania strony na różnych urządzeniach -->
-    <!-- SVG first: transparent, so it sits correctly on a dark tab strip.
-         The WebP stays as a fallback for browsers that skip SVG icons. -->
-    <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
-    <link rel="alternate icon" type="image/webp" href="img/icon.webp" />
-    <!-- Link do ikony strony (favicon) -->
-    <meta name="description" content="This is an example description..." />
-    <!-- Opis strony, ważny dla SEO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- Optymalizacja ładowania fontów Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Optymalizacja ładowania fontów Google -->
-    <link rel="preload" href="css/styleIndex.css" as="style" />
-    <!-- Preload dla krytycznego CSS -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap"
-      rel="stylesheet" />
-    <!-- Link do zewnętrznego arkusza stylów fontów Google -->
-    <link rel="stylesheet" href="css/styleIndex.css" />
-    <!-- Link do głównego arkusza stylów -->
-  
-    <!-- Canonical URL: the authoritative address for this page. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src &#x27;self&#x27;; img-src &#x27;self&#x27; data: https://openweathermap.org; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; script-src &#x27;self&#x27;; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;self&#x27;; form-action &#x27;self&#x27;" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Curiosities Magazine | Responsive HTML and CSS Demo</title>
+    <meta name="description" content="Curiosities Magazine is a responsive demo site built with semantic HTML and CSS, with a photo section, products, services and a newsletter form." />
     <link rel="canonical" href="https://projekt1.dawidolko.pl/" />
-
-    <!-- Open Graph / Twitter: controls how the page renders when shared. -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://projekt1.dawidolko.pl/" />
-    <meta property="og:title" content="CuriositiesMagazine" />
-    <meta property="og:description" content="Magazine-style responsive website built with semantic HTML and CSS." />
-    <meta property="og:site_name" content="CuriositiesMagazine" />
+    <meta property="og:site_name" content="Curiosities Magazine" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Curiosities Magazine | Responsive HTML and CSS Demo" />
+    <meta property="og:description" content="Curiosities Magazine is a responsive demo site built with semantic HTML and CSS, with a photo section, products, services and a newsletter form." />
+    <meta property="og:url" content="https://projekt1.dawidolko.pl/" />
+    <meta property="og:image" content="https://projekt1.dawidolko.pl/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Curiosities Magazine preview" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CuriositiesMagazine" />
-    <meta name="twitter:description" content="Magazine-style responsive website built with semantic HTML and CSS." />
-
-    <!-- Structured data: lets search engines describe the site in results. -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "CuriositiesMagazine",
-        "url": "https://projekt1.dawidolko.pl",
-        "description": "Magazine-style responsive website built with semantic HTML and CSS.",
-        "author": { "@type": "Person", "name": "Dawid Olko", "url": "https://dawidolko.pl" }
-      }
-    </script>
+    <meta name="twitter:title" content="Curiosities Magazine | Responsive HTML and CSS Demo" />
+    <meta name="twitter:description" content="Curiosities Magazine is a responsive demo site built with semantic HTML and CSS, with a photo section, products, services and a newsletter form." />
+    <meta name="twitter:image" content="https://projekt1.dawidolko.pl/img/og-image.jpg" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Curiosities Magazine","url":"https://projekt1.dawidolko.pl/","description":"Responsive demo site built with semantic HTML and CSS.","inLanguage":"en","author":{"@type":"Person","name":"Dawid Olko","jobTitle":"Fullstack / AI Developer","url":"https://dawidolko.pl/"}}</script>
+<link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+    <link rel="alternate icon" type="image/webp" href="img/icon.webp" />
+    <link rel="preload" href="css/styleIndex.css" as="style" />
+    <link rel="stylesheet" href="css/styleIndex.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/a11y.css" />
     <script src="/a11y/a11y-panel.js" data-accent="#1d4ed8" defer></script>
   </head>
 
@@ -86,14 +60,14 @@
             <!-- Sekcja nawigacji -->
             <label id="hamburger" for="toggle">☰</label>
             <!-- Przycisk menu hamburger dla responsywności -->
-            <input type="checkbox" id="toggle" />
+            <input type="checkbox" id="toggle" aria-label="Toggle navigation menu" />
             <ul class="navbar-links">
               <li>
                 <a href="./index.html" class="nav__item"
                   ><ruby
                     ><img
                       src="img/home-alt.svg"
-                      alt="home"
+                      alt=""
                       loading="lazy"
                       width="25"
                       height="25" />
@@ -106,7 +80,7 @@
                   ><ruby
                     ><img
                       src="img/collage.svg"
-                      alt="collage"
+                      alt=""
                       loading="lazy"
                       width="25"
                       height="25" />
@@ -119,7 +93,7 @@
                   ><ruby
                     ><img
                       src="img/ereader.svg"
-                      alt="ereader"
+                      alt=""
                       loading="lazy"
                       width="25"
                       height="25" />
@@ -132,7 +106,7 @@
                   ><ruby
                     ><img
                       src="img/calendar-next.svg"
-                      alt="calendar"
+                      alt=""
                       loading="lazy"
                       width="25"
                       height="25" />
@@ -145,7 +119,7 @@
                   ><ruby
                     ><img
                       src="img/color-bucket.svg"
-                      alt="color-bucket"
+                      alt=""
                       loading="lazy"
                       width="25"
                       height="25" />
@@ -158,7 +132,7 @@
                   ><ruby
                     ><img
                       src="img/phone.svg"
-                      alt="phone"
+                      alt=""
                       loading="lazy"
                       width="25"
                       height="25" />
@@ -171,7 +145,7 @@
                   ><ruby
                     ><img
                       src="img/comment.svg"
-                      alt="comment"
+                      alt=""
                       loading="lazy"
                       width="25"
                       height="25" />
@@ -187,7 +161,7 @@
                     ><img
                       id="koszyk"
                       src="img/shopping-cart.svg"
-                      alt="Koszyk"
+                      alt=""
                       loading="lazy"
                       width="25"
                       height="25" />
@@ -224,12 +198,11 @@
       </div>
     </header>
     <main id="main-content" tabindex="-1">
-      <h1 class="visually-hidden">CuriositiesMagazine — magazyn o ciekawostkach</h1>
+      <h1 class="visually-hidden">Curiosities Magazine — a magazine about curiosities</h1>
       <!-- Główna sekcja strony -->
       <section class="photoFirst">
         <!-- Sekcja pierwszego zestawu zdjęć -->
         <!-- Obrazy i tekst w tej sekcji -->
-        <h2 style="display: none">.</h2>
         <img
           id="photos1"
           src="img/mainPage4.webp"
@@ -260,52 +233,9 @@
       >
 
       <div class="photoSecond">
-        <div class="animation">
-          <img
-            class="glasses"
-            src="https://kibbles.klausapp.com/assets/img/loader/glasses-regular.svg"
-            alt="oksy1"
-            width="140"
-            height="140" />
-          <img
-            class="logoCat"
-            src="https://kibbles.klausapp.com/assets/img/loader/main.svg"
-            alt="cot1"
-            width="140"
-            height="140" />
-        </div>
-        <div class="animation">
-          <img
-            class="glasses"
-            src="https://kibbles.klausapp.com/assets/img/loader/glasses-deal-with-it.svg"
-            alt="oksy2"
-            width="140"
-            height="140" />
-          <img
-            class="logoCat"
-            src="https://kibbles.klausapp.com/assets/img/loader/main.svg"
-            alt="cot2"
-            width="140"
-            height="140" />
-        </div>
-        <div class="animation">
-          <img
-            class="glasses"
-            src="https://kibbles.klausapp.com/assets/img/loader/glasses-hearts.svg"
-            alt="oksy3"
-            width="140"
-            height="140" />
-          <img
-            class="logoCat"
-            src="https://kibbles.klausapp.com/assets/img/loader/main.svg"
-            alt="cot3"
-            width="140"
-            height="140" />
-        </div>
       </div>
 
       <section class="photoSecond">
-        <h2 style="display: none">.</h2>
         <img
           class="photosX"
           src="img/mainPage1.webp"
@@ -333,6 +263,7 @@
         >LOAD LESS PHOTO</label
       >
 
+      <h2 class="visually-hidden">Featured products</h2>
       <div class="product-grid">
         <div class="product-item" style="background-color: #eae9e7">
           <div class="product-image">
@@ -958,7 +889,6 @@
         </div>
       </section>
       <section class="offer">
-        <h2 style="display: none">.</h2>
         <div class="offer__body">
           <img
             src="img/logo1transparent.webp"
@@ -1040,7 +970,7 @@
               autocomplete="email"
               placeholder="Enter your email address"
               required />
-            <button type="submit" class="newsletter-submit-btn" aria-label="Zapisz się do newslettera">
+            <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe to the newsletter">
               <img
                 src="img/phone.svg"
                 alt="Send"
@@ -1103,12 +1033,7 @@
       <div>
         <!-- Dodatkowe informacje lub linki -->
         <p>
-          <a href="https://jigsaw.w3.org/css-validator/check/referer" aria-label="Validate the CSS of this page with the W3C validator">
-            <img
-              style="border: 0; width: 88px; height: 31px"
-              src="https://jigsaw.w3.org/css-validator/images/vcss"
-              alt="Poprawny CSS!" />
-          </a>
+          <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener noreferrer">Valid CSS</a>
         </p>
       </div>
     </footer>

@@ -1,0 +1,21 @@
+# Curiosities Magazine
+
+> Curiosities Magazine is a responsive demo site built with semantic HTML and CSS, with a photo section, products, services and a newsletter form.
+
+## Pages
+
+- [Curiosities Magazine](https://projekt1.dawidolko.pl/): Curiosities Magazine is a responsive demo site built with semantic HTML and CSS, with a photo section, products, services and a newsletter form.
+- [Our Products](https://projekt1.dawidolko.pl/ourProducts.html): Browse the demo product catalogue of Curiosities Magazine, with men and women product cards, prices and category filters built in pure CSS.
+- [First Product Details](https://projekt1.dawidolko.pl/productFirst.html): Detail page for the first demo product in Curiosities Magazine, with a package list, a schedule table and an add to cart link.
+- [Second Product Details](https://projekt1.dawidolko.pl/productSecond.html): Detail page for the second demo product in Curiosities Magazine, with a package list, a schedule table and an add to cart link.
+- [Third Product Details](https://projekt1.dawidolko.pl/productThird.html): Detail page for the third demo product in Curiosities Magazine, with a package list, a schedule table and an add to cart link.
+- [Photo Gallery](https://projekt1.dawidolko.pl/gallery.html): Photo gallery of the Curiosities Magazine demo site, a responsive image grid built with semantic HTML and CSS and no JavaScript.
+- [Services](https://projekt1.dawidolko.pl/services.html): The services page of Curiosities Magazine lists demo offer cards with short descriptions and links through to the product catalogue.
+- [About Us](https://projekt1.dawidolko.pl/aboutUs.html): Read about the Curiosities Magazine demo project, a responsive multi-page site written as a university HTML and CSS assignment.
+- [Frequently Asked Questions](https://projekt1.dawidolko.pl/faq.html): Frequently asked questions about orders, delivery addresses, warranty, free shipping and tracking on the Curiosities Magazine demo shop.
+- [Contact Us](https://projekt1.dawidolko.pl/contact.html): The contact page of Curiosities Magazine has a validated form for name, email, date, phone and message, built with HTML and CSS only.
+- [Privacy Policy](https://projekt1.dawidolko.pl/privacy.html): Privacy policy page of the Curiosities Magazine demo site, a static sample document that shows the layout of a legal page.
+
+## Source
+
+- [GitHub repository](https://github.com/dawidolko/CuriositiesMagazine-Project-HTML-CSS): Source code and setup notes for the project.

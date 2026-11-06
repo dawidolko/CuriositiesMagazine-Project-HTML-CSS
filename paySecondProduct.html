@@ -1,24 +1,38 @@
 <!doctype html>
-<html lang="pl-PL">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lorem ipsum - CART</title>
-    <link rel="icon" type="image/webp" sizes="32x32" href="img/icon.webp" />
-    <meta
-      name="description"
-      content="This is an example description and this is my website which is my project. This website is my property and was created to complete the course." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap"
-      rel="stylesheet" />
+    <meta http-equiv="Content-Security-Policy" content="default-src &#x27;self&#x27;; img-src &#x27;self&#x27; data: https://openweathermap.org; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27;; script-src &#x27;self&#x27;; font-src &#x27;self&#x27;; connect-src &#x27;self&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;self&#x27;; form-action &#x27;self&#x27;" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Second Product Cart | Curiosities Magazine Demo</title>
+    <meta name="description" content="Demo checkout for the second product of Curiosities Magazine with a sample card form. No real order is placed and no payment is taken." />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://projekt1.dawidolko.pl/paySecondProduct.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Curiosities Magazine" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Second Product Cart | Curiosities Magazine Demo" />
+    <meta property="og:description" content="Demo checkout for the second product of Curiosities Magazine with a sample card form. No real order is placed and no payment is taken." />
+    <meta property="og:url" content="https://projekt1.dawidolko.pl/paySecondProduct.html" />
+    <meta property="og:image" content="https://projekt1.dawidolko.pl/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Curiosities Magazine preview" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Second Product Cart | Curiosities Magazine Demo" />
+    <meta name="twitter:description" content="Demo checkout for the second product of Curiosities Magazine with a sample card form. No real order is placed and no payment is taken." />
+    <meta name="twitter:image" content="https://projekt1.dawidolko.pl/img/og-image.jpg" />
+<link rel="icon" type="image/webp" sizes="32x32" href="img/icon.webp" />
     <link rel="preload" href="css/stylePay.css" as="style" />
     <link rel="stylesheet" href="css/stylePay.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/a11y.css" />
     <script src="/a11y/a11y-panel.js" data-accent="#1d4ed8" defer></script>
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
       <div class="loading-top"></div>
       <div class="loading-bottom"></div>
@@ -34,7 +48,7 @@
         /></a>
         <nav>
           <label id="hamburger" for="toggle">☰</label
-          ><input type="checkbox" id="toggle" />
+          ><input type="checkbox" id="toggle" aria-label="Toggle navigation menu" />
 
           <ul class="navbar-links">
             <li>
@@ -42,7 +56,7 @@
                 ><ruby
                   ><img
                     src="img/home-alt.svg"
-                    alt="home"
+                    alt=""
                     loading="lazy"
                     width="25"
                     height="25" />
@@ -55,7 +69,7 @@
                 ><ruby
                   ><img
                     src="img/collage.svg"
-                    alt="collage"
+                    alt=""
                     loading="lazy"
                     width="25"
                     height="25" />
@@ -68,7 +82,7 @@
                 ><ruby
                   ><img
                     src="img/ereader.svg"
-                    alt="ereader"
+                    alt=""
                     loading="lazy"
                     width="25"
                     height="25" />
@@ -81,7 +95,7 @@
                 ><ruby
                   ><img
                     src="img/calendar-next.svg"
-                    alt="calendar"
+                    alt=""
                     loading="lazy"
                     width="25"
                     height="25" />
@@ -94,7 +108,7 @@
                 ><ruby
                   ><img
                     src="img/color-bucket.svg"
-                    alt="color-bucket"
+                    alt=""
                     loading="lazy"
                     width="25"
                     height="25" />
@@ -107,7 +121,7 @@
                 ><ruby
                   ><img
                     src="img/phone.svg"
-                    alt="phone"
+                    alt=""
                     loading="lazy"
                     width="25"
                     height="25" />
@@ -120,7 +134,7 @@
                 ><ruby
                   ><img
                     src="img/comment.svg"
-                    alt="comment"
+                    alt=""
                     loading="lazy"
                     width="25"
                     height="25" />
@@ -136,7 +150,7 @@
                   ><img
                     id="koszyk"
                     src="img/shopping-cart.svg"
-                    alt="cart"
+                    alt=""
                     loading="lazy"
                     width="25"
                     height="25" />
@@ -148,9 +162,9 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="section contact" id="contact">
-        <h1 style="display: none">.</h1>
+        <h1 class="visually-hidden">Second Product Cart</h1>
         <h2 style="text-align: center">YOUR CART!</h2>
         <div class="shopping-cart">
           <div class="title">Shopping Cart</div>
@@ -166,7 +180,7 @@
             <tbody>
               <tr>
                 <td>
-                  <img
+                  <img loading="lazy" width="140" height="140"
                     src="img/pay2.webp"
                     alt="Product 2"
                     style="width: 50px" />
@@ -195,8 +209,8 @@
             <fieldset>
               <legend>Card Details</legend>
               <div class="infocard">
-                <img src="img/visa.webp" alt="Visa" width="50" height="50" />
-                <img
+                <img loading="lazy" src="img/visa.webp" alt="Visa" width="50" height="50" />
+                <img loading="lazy"
                   src="img/master.webp"
                   alt="Mastercard"
                   width="50"
@@ -313,12 +327,7 @@
         </p>
       </div>
       <p>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-          <img
-            style="border: 0; width: 88px; height: 31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Poprawny CSS!" />
-        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener noreferrer">Valid CSS</a>
       </p>
     </footer>
   </body>
