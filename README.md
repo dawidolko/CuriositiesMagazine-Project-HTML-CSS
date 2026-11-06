@@ -48,6 +48,14 @@ It was produced for an internet technologies course and carries the evidence: W3
 
 ---
 
+## 🎬 Demo
+
+<p align="center">
+  <img src="docs/readme/demo.webp" alt="Curiosities Magazine: a short scroll through the live site" width="80%">
+</p>
+
+---
+
 ## 🛠️ Technology Stack
 
 | Technology | Role                                                          |
