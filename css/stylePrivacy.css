@@ -1,46 +1,57 @@
-/* Root variables
-Definicje globalnych zmiennych CSS, które określają kolorystykę strony, w tym kolory tła, tekstów i akcentów.
-*/
+/*
+ * Root variables
+ * Global CSS variables for the page colours: backgrounds, text and accents.
+ */
 
-/* Body Styles
-Podstawowe style dla całego dokumentu, ustawiające m.in. kolor tła, rodzinę czcionek, wyrównanie elementów i układ flex.
-*/
+/*
+ * Body Styles
+ * Base styles for the whole document: background, font family, alignment and flex layout.
+ */
 
-/* Header Styles
-Style dla nagłówka strony, określające jego pozycjonowanie, rozmiar i wyrównanie.
-*/
+/*
+ * Header Styles
+ * Page header positioning, size and alignment.
+ */
 
-/* Loading Bars
-Style dla animowanych pasków ładowania na górze i dole strony, z określeniem pozycji, rozmiaru i gradientu kolorów.
-*/
+/*
+ * Loading Bars
+ * Animated loading bars at the top and bottom of the page: position, size and colour gradient.
+ */
 
-/* Blur Background
-Style dla rozmytego tła, zdefiniowanie pozycji, rozmiaru, obrazu tła i filtru rozmycia.
-*/
+/*
+ * Blur Background
+ * Blurred background: position, size, background image and blur filter.
+ */
 
-/* Header Text
-Style dla tekstu w nagłówku, w tym rozmiar fontu, kolor, margines i efekt przejścia.
-*/
+/*
+ * Header Text
+ * Header text: font size, colour, margin and transition effect.
+ */
 
-/* Call to Action Button
-Style dla przycisku zachęcającego do działania w nagłówku, określające jego wygląd i interakcje.
-*/
+/*
+ * Call to Action Button
+ * The call to action button in the header: look and interactions.
+ */
 
-/* Navigation Bar
-Style dla paska nawigacji, w tym jego pozycjonowanie, układ, kolor tła i style dla logo oraz elementów nawigacyjnych.
-*/
+/*
+ * Navigation Bar
+ * Navigation bar: positioning, layout, background colour, logo and navigation items.
+ */
 
-/* Footer Styles
-Style dla stopki, określające tło, kolor tekstu, linki i ich interakcje oraz style dla obrazków.
-*/
+/*
+ * Footer Styles
+ * Footer: background, text colour, links with their interactions, and images.
+ */
 
-/* Media Queries for medium screens
-Zestaw reguł dla responsywności strony na średnich ekranach, w tym zmiany w stylach nawigacji i nagłówka.
-*/
+/*
+ * Media Queries for medium screens
+ * Responsive rules for medium screens, including navigation and header changes.
+ */
 
-/* Media Queries for small screens
-Zestaw reguł dla responsywności strony na małych ekranach, w tym zmiany w stylach nawigacji, nagłówka i pozycjonowania elementów.
-*/
+/*
+ * Media Queries for small screens
+ * Responsive rules for small screens, including navigation, header and element positioning changes.
+ */
 
 :root {
   --bg-color: #d1c6c6;

@@ -1,97 +1,96 @@
-/* Root variables
-   Definicje kolorów używanych w całej stronie.
-   --bg-color, --bg2-color: Główne kolory tła.
-   --blue, --black-color, --white-color, --gray-color: Podstawowe kolory tekstu i elementów.
-   --red-color, --red2-color: Odcienie czerwieni używane dla elementów interaktywnych i akcentów.
-   --first-color do --ten-color: Zdefiniowana paleta kolorów dla spójnego projektowania.
-*/
+/*
+ * Root variables
+ * Colours used across the page.
+ * --bg-color, --bg2-color: main background colours.
+ * --blue, --black-color, --white-color, --gray-color: base text and element colours.
+ * --red-color, --red2-color: red shades for interactive elements and accents.
+ * --first-color to --ten-color: palette for consistent design.
+ */
 
-/* Animations
-   @keyframes fadeIn: Definicja animacji pojawiania się z efektem 'fade in' i skalowania.
-*/
+/*
+ * Animations
+ * @keyframes fadeIn: fade-in animation with scaling.
+ */
 
-/* Body Styles
-   Definicje stylów dla całego dokumentu.
-   background-color: Tło strony.
-   font-family: Główna czcionka.
-   line-height: Wysokość linii tekstu.
-   justify-content, align-items: Wyrównanie elementów.
-   display: Typ wyświetlania.
-   flex-direction: Kierunek elementów flex.
-   min-height: Minimalna wysokość.
-   margin, padding: Marginesy i wypełnienia.
-   overflow-x: Ukrywanie poziomego przewijania.
-*/
+/*
+ * Body Styles
+ * Styles for the whole document: background, main font, line height, flex
+ * layout, minimum height, margins and hidden horizontal scrolling.
+ */
 
-/* Header Styles
-   .header: Style dla głównego nagłówka.
-   margin-top, height, display, align-items, justify-content, text-align: Ustawienia wyświetlania i rozmieszczenia.
-*/
+/*
+ * Header Styles
+ * .header: main header layout and positioning.
+ */
 
-/* Loading Bars
-   .loading-top, .loading-bottom: Style dla górnej i dolnej belki ładowania.
-   position, left, width, height, background, z-index: Ustawienia pozycji i wyglądu.
-*/
+/*
+ * Loading Bars
+ * .loading-top, .loading-bottom: position and look of the top and bottom loading bars.
+ */
 
-/* Blur Background
-   .blur-background: Style dla rozmytego tła za elementami.
-   position, top, left, width, height, background-image, background-size, background-position, filter, z-index: Definicje tła i efektu rozmycia.
-*/
+/*
+ * Blur Background
+ * .blur-background: blurred background behind elements.
+ */
 
-/* Header Text
-   .header__text: Style dla tekstu w nagłówku.
-   .header__text--colorized: Dodatkowe style dla wyróżnionego tekstu.
-   font-size, color, margin-bottom, transition, text-shadow: Stylizacja tekstu.
-*/
+/*
+ * Header Text
+ * .header__text: header text.
+ * .header__text--colorized: extra styles for highlighted text.
+ */
 
-/* Call to Action Button
-   .header__cta: Style dla przycisku akcji (np. zachęta do działania).
-   text-decoration, color, font-size, background-color, padding, border-radius, transition: Definicje wyglądu i animacji przycisku.
-*/
+/*
+ * Call to Action Button
+ * .header__cta: look and animation of the action button.
+ */
 
-/* Navigation Bar
-   .navbar: Style dla paska nawigacji.
-   .logo img: Style dla obrazka logo.
-   nav: Style dla nawigacji.
-   nav ul, nav ul li, nav ul li a: Style dla listy nawigacyjnej i jej elementów.
-   .nav__item: Style dla poszczególnych elementów nawigacji.
-   #hamburger, input#toggle: Style dla menu hamburgerowego (dla mniejszych ekranów).
-*/
+/*
+ * Navigation Bar
+ * .navbar: navigation bar.
+ * .logo img: logo image.
+ * nav, nav ul, nav ul li, nav ul li a: navigation list and its items.
+ * .nav__item: individual navigation items.
+ * #hamburger, input#toggle: hamburger menu for smaller screens.
+ */
 
-/* Main Content
-   main: Style dla głównej sekcji treści.
-   margin-top, margin-bottom: Marginesy od góry i dołu.
-*/
+/*
+ * Main Content
+ * main: main content section margins.
+ */
 
-/* Section Heading
-   .section__heading: Style dla nagłówków sekcji.
-   font-size, color, margin-bottom: Definicje wyglądu nagłówka.
-*/
+/*
+ * Section Heading
+ * .section__heading: look of the section headings.
+ */
 
-/* Footer Styles
-   footer: Style dla stopki.
-   .footer__text, .footer__link: Style dla tekstu i linków w stopce.
-   color, text-align, width: Ustawienia tekstu i linków.
-   footer img: Style dla obrazków w stopce.
-*/
+/*
+ * Footer Styles
+ * footer: footer.
+ * .footer__text, .footer__link: footer text and links.
+ * footer img: footer images.
+ */
 
-/* Gallery Styles
-   .gallery-heading: Style dla nagłówka galerii.
-   .gallery-container: Kontener dla galerii.
-   #gallery: Style dla siatki galerii.
-   #gallery img: Style dla obrazów w galerii.
-*/
+/*
+ * Gallery Styles
+ * .gallery-heading: gallery heading.
+ * .gallery-container: gallery container.
+ * #gallery: gallery grid.
+ * #gallery img: gallery images.
+ */
 
-/* Media Queries
-   Zestaw reguł CSS stosowanych dla różnych rozmiarów urządzeń (responsywność).
-   @media (max-width: 768px), (max-width: 650px), (min-width: 768px) and (max-width: 1199px), (min-width: 1200px): Punkt przełamania i stylów dla różnych rozdzielczości ekranu.
-*/
+/*
+ * Media Queries
+ * Responsive rules for different screen sizes.
+ * @media (max-width: 768px), (max-width: 650px),
+ * (min-width: 768px) and (max-width: 1199px), (min-width: 1200px): breakpoints.
+ */
 
-/* Specific Media Query Examples
-   Przykłady użycia media queries do zmiany układu siatki galerii i menu nawigacyjnego na mniejszych ekranach.
-   #hamburger, .navbar, nav ul: Zmiany w menu nawigacyjnym dla mniejszych ekranów.
-   #gallery: Zmiany w układzie siatki galerii.
-*/
+/*
+ * Specific Media Query Examples
+ * Media queries changing the gallery grid and the navigation menu on smaller screens.
+ * #hamburger, .navbar, nav ul: navigation menu changes.
+ * #gallery: gallery grid changes.
+ */
 
 :root {
   --bg-color: #d1c6c6;

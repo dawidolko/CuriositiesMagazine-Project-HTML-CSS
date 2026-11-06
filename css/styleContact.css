@@ -1,70 +1,87 @@
-/* Root variables
-Zdefiniowanie globalnych zmiennych CSS (kolorów) dla łatwej zmiany motywu i spójności na całej stronie.
-*/
+/*
+ * Root variables
+ * Global CSS colour variables for easy theme changes and consistency across the page.
+ */
 
-/* Custom Properties
-Zdefiniowanie własnych właściwości CSS dla dynamicznych efektów, jak obracanie elementów.
-*/
+/*
+ * Custom Properties
+ * Custom CSS properties for dynamic effects such as rotating elements.
+ */
 
-/* Animations
-Definicje animacji, w tym fadeOut dla stopniowego znikania elementów, spin dla obracania elementów, oraz fly dla animacji przesunięcia i zanikania.
-*/
+/*
+ * Animations
+ * fadeOut fades elements out, spin rotates them, and fly moves and fades them.
+ */
 
-/* Body Styles
-Podstawowe style dla całej strony, w tym ustawienia wyświetlania, czcionki, koloru tła oraz układu elementów.
-*/
+/*
+ * Body Styles
+ * Base styles for the whole page: display, font, background colour and element layout.
+ */
 
-/* Header Styles
-Style specyficzne dla nagłówka strony, w tym wyrównanie, rozmiar i sposób wyświetlania.
-*/
+/*
+ * Header Styles
+ * Page header styles: alignment, size and display.
+ */
 
-/* Loading Bars
-Style dla pasków ładowania umieszczonych na górze i dole strony, w tym ich pozycja, rozmiar i gradient tła.
-*/
+/*
+ * Loading Bars
+ * Loading bars at the top and bottom of the page: position, size and background gradient.
+ */
 
-/* Blur Background
-Styl dla rozmytego tła, w tym pozycja, rozmiar, obraz tła i filtr rozmycia.
-*/
+/*
+ * Blur Background
+ * Blurred background: position, size, background image and blur filter.
+ */
 
-/* Header Text
-Style dla tekstu w nagłówku, w tym rozmiar fontu, kolor, margines i animacja przy najechaniu.
-*/
+/*
+ * Header Text
+ * Header text: font size, colour, margin and hover animation.
+ */
 
-/* Call to Action Button
-Style dla przycisku akcji (CTA) w nagłówku, w tym dekoracja tekstu, kolor, rozmiar fontu i animacja przy najechaniu.
-*/
+/*
+ * Call to Action Button
+ * CTA button in the header: text decoration, colour, font size and hover animation.
+ */
 
-/* Navigation Bar
-Style dla paska nawigacji, w tym pozycja, kolor tła, wyświetlanie, i style dla logo oraz elementów nawigacyjnych.
-*/
+/*
+ * Navigation Bar
+ * Navigation bar: position, background colour, display, logo and navigation items.
+ */
 
-/* Main Content
-Style dla głównej sekcji treści, w tym marginesy.
-*/
+/*
+ * Main Content
+ * Main content section, including margins.
+ */
 
-/* Section Heading
-Style dla nagłówków sekcji, w tym rozmiar fontu, kolor i marginesy.
-*/
+/*
+ * Section Heading
+ * Section headings: font size, colour and margins.
+ */
 
-/* Thank You Modal
-Style dla modalu 'Dziękujemy', w tym sposób wyświetlania, pozycjonowanie, animacja i kolor tła.
-*/
+/*
+ * Thank You Modal
+ * The thank-you modal: display, positioning, animation and background colour.
+ */
 
-/* Contact Section
-Style dla sekcji kontaktowej, w tym tło, pozycjonowanie, animacje i specyficzne style dla formularza.
-*/
+/*
+ * Contact Section
+ * Contact section: background, positioning, animations and form-specific styles.
+ */
 
-/* Form Styles
-Style dla formularzy, w tym tło, cienie, rozmiary i style dla pól tekstowych i przycisków.
-*/
+/*
+ * Form Styles
+ * Forms: background, shadows, sizes, and text fields and buttons.
+ */
 
-/* Footer Styles
-Style dla stopki, w tym tło, kolor tekstu, linki i ich interakcje oraz style dla obrazków.
-*/
+/*
+ * Footer Styles
+ * Footer: background, text colour, links with their interactions, and images.
+ */
 
-/* Media Queries
-Zestaw reguł dla responsywności strony, w tym zmiany w stylach dla różnych szerokości ekranów.
-*/
+/*
+ * Media Queries
+ * Responsive rules, including style changes for different screen widths.
+ */
 
 :root {
     --bg-color: #d1c6c6;
